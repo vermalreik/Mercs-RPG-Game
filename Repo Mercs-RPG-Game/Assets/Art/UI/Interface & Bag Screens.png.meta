@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: c39d6d9a14610884f97fba972f9acc2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2748275192741609703
+    second: Interface & Bag Screens_0
+  - first:
+      213: -8821285522006296372
+    second: Interface & Bag Screens_1
+  - first:
+      213: -7905769376420366719
+    second: Interface & Bag Screens_2
+  - first:
+      213: 7726436524807473236
+    second: Interface & Bag Screens_3
+  - first:
+      213: 6249125191898075871
+    second: Interface & Bag Screens_4
+  - first:
+      213: -6528920071127944281
+    second: Interface & Bag Screens_5
+  - first:
+      213: -7686570593344742358
+    second: Interface & Bag Screens_6
+  - first:
+      213: -4816836497399739158
+    second: Interface & Bag Screens_7
+  - first:
+      213: 6047874548259686294
+    second: Interface & Bag Screens_8
+  - first:
+      213: 6264218231373652524
+    second: Interface & Bag Screens_9
+  - first:
+      213: -2768899704298773503
+    second: Interface & Bag Screens_10
+  - first:
+      213: -2807524938821639471
+    second: Interface & Bag Screens_11
+  - first:
+      213: 1270100486740522913
+    second: Interface & Bag Screens_12
+  - first:
+      213: -3619935888748263941
+    second: Interface & Bag Screens_13
+  - first:
+      213: -6943180093994364361
+    second: Interface & Bag Screens_14
+  - first:
+      213: -303459957427688860
+    second: Interface & Bag Screens_15
+  - first:
+      213: -986840835500613195
+    second: Interface & Bag Screens_16
+  - first:
+      213: 4674568084891639666
+    second: Interface & Bag Screens_17
+  - first:
+      213: -7726083146390211481
+    second: Interface & Bag Screens_18
+  - first:
+      213: -8632440596859750365
+    second: Interface & Bag Screens_19
+  - first:
+      213: -592605076728265652
+    second: Interface & Bag Screens_20
+  - first:
+      213: 3893276557736085488
+    second: Interface & Bag Screens_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Interface & Bag Screens_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 840
+        width: 720
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f3e9fe54a2cd9d0800000000000000
+      internalID: -2748275192741609703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_1
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1275
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8b48e0e8f749580800000000000000
+      internalID: -8821285522006296372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_2
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1275
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1867d4283a0194290800000000000000
+      internalID: -7905769376420366719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_3
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1284
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458c0c83511d93b60800000000000000
+      internalID: 7726436524807473236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_4
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1119
+        width: 174
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd29704b04a59b650800000000000000
+      internalID: 6249125191898075871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_5
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1119
+        width: 174
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3308979cd9465a0800000000000000
+      internalID: -6528920071127944281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_6
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1119
+        width: 174
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c19b245c0d35590800000000000000
+      internalID: -7686570593344742358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1182
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec0a5fe9b8272db0800000000000000
+      internalID: -4816836497399739158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_8
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1203
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697052fcbdd5ee350800000000000000
+      internalID: 6047874548259686294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_9
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 903
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c226d8cca49fee650800000000000000
+      internalID: 6264218231373652524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_10
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 903
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1046692a364e299d0800000000000000
+      internalID: -2768899704298773503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_11
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 903
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d26c7b61faa909d0800000000000000
+      internalID: -2807524938821639471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_12
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 903
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a73835d9ad40a110800000000000000
+      internalID: 1270100486740522913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 336
+        width: 720
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5c8790d7763cdc0800000000000000
+      internalID: -3619935888748263941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_14
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 753
+        width: 690
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 33, y: 36, z: 33, w: 36}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73217e5bd7ed4af90800000000000000
+      internalID: -6943180093994364361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_15
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 606
+        width: 696
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aa7f9c6c4e9cbf0800000000000000
+      internalID: -303459957427688860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_16
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 462
+        width: 708
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1e2261d790e42f0800000000000000
+      internalID: -986840835500613195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_17
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 315
+        width: 714
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f185208e66fd040800000000000000
+      internalID: 4674568084891639666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 222
+        width: 231
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764774a105077c490800000000000000
+      internalID: -7726083146390211481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_19
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 30
+        width: 786
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32873878309633880800000000000000
+      internalID: -8632440596859750365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 126
+        width: 231
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44c48d82d4a6c7f0800000000000000
+      internalID: -592605076728265652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface & Bag Screens_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 30
+        width: 231
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7073cd662b70630800000000000000
+      internalID: 3893276557736085488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2676 @@
+fileFormatVersion: 2
+guid: 3885ba73c0dadca49b64afc4643c24e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6849124407710317933
+    second: Intro Screens_0
+  - first:
+      213: -8132822020519296974
+    second: Intro Screens_1
+  - first:
+      213: 2092112426353064991
+    second: Intro Screens_2
+  - first:
+      213: -2198860281505460844
+    second: Intro Screens_3
+  - first:
+      213: -2078579903074432688
+    second: Intro Screens_4
+  - first:
+      213: -1039930134037661784
+    second: Intro Screens_5
+  - first:
+      213: -7320874547432051978
+    second: Intro Screens_6
+  - first:
+      213: 8054700273323587330
+    second: Intro Screens_7
+  - first:
+      213: -1294826738107045301
+    second: Intro Screens_8
+  - first:
+      213: 2605423464882464650
+    second: Intro Screens_9
+  - first:
+      213: -2383621492604201731
+    second: Intro Screens_10
+  - first:
+      213: -3437754401260297382
+    second: Intro Screens_11
+  - first:
+      213: 4736015859798250872
+    second: Intro Screens_12
+  - first:
+      213: -4009446304369476062
+    second: Intro Screens_13
+  - first:
+      213: 2362219384246665835
+    second: Intro Screens_14
+  - first:
+      213: 6894828998661490384
+    second: Intro Screens_15
+  - first:
+      213: 8636569982403351293
+    second: Intro Screens_16
+  - first:
+      213: 4574106336987705865
+    second: Intro Screens_17
+  - first:
+      213: 8240055905370461675
+    second: Intro Screens_18
+  - first:
+      213: 7475734554122228259
+    second: Intro Screens_19
+  - first:
+      213: -6405085328546032485
+    second: Intro Screens_20
+  - first:
+      213: -4286473337511070422
+    second: Intro Screens_21
+  - first:
+      213: 8437085896737205079
+    second: Intro Screens_22
+  - first:
+      213: 3174729147052397897
+    second: Intro Screens_23
+  - first:
+      213: -6943973171653136938
+    second: Intro Screens_24
+  - first:
+      213: -4917888235098794848
+    second: Intro Screens_25
+  - first:
+      213: -8887500311136783501
+    second: Intro Screens_26
+  - first:
+      213: 3900999100612607642
+    second: Intro Screens_27
+  - first:
+      213: 3454876428560683495
+    second: Intro Screens_28
+  - first:
+      213: -5379404001102968329
+    second: Intro Screens_29
+  - first:
+      213: 2577391382537670332
+    second: Intro Screens_30
+  - first:
+      213: -5271752808861047852
+    second: Intro Screens_31
+  - first:
+      213: -7940711228516975955
+    second: Intro Screens_32
+  - first:
+      213: -1085388588148059463
+    second: Intro Screens_33
+  - first:
+      213: -3563417732065944953
+    second: Intro Screens_34
+  - first:
+      213: 3681927493621364653
+    second: Intro Screens_35
+  - first:
+      213: 651602660809986122
+    second: Intro Screens_36
+  - first:
+      213: -6935015516614267585
+    second: Intro Screens_37
+  - first:
+      213: 8922595844789191569
+    second: Intro Screens_38
+  - first:
+      213: -6615713580341393493
+    second: Intro Screens_39
+  - first:
+      213: -3957152811053960655
+    second: Intro Screens_40
+  - first:
+      213: -6223871637749194056
+    second: Intro Screens_41
+  - first:
+      213: 4139594968028038228
+    second: Intro Screens_42
+  - first:
+      213: 4020377771064613952
+    second: Intro Screens_43
+  - first:
+      213: -2525266327709466378
+    second: Intro Screens_44
+  - first:
+      213: 5609288183060675244
+    second: Intro Screens_45
+  - first:
+      213: 7908878553378973124
+    second: Intro Screens_46
+  - first:
+      213: 6133816897343681306
+    second: Intro Screens_47
+  - first:
+      213: 7132280907026172076
+    second: Intro Screens_48
+  - first:
+      213: -39988284436594125
+    second: Intro Screens_49
+  - first:
+      213: 8915260080122655568
+    second: Intro Screens_50
+  - first:
+      213: 3116690672884192535
+    second: Intro Screens_51
+  - first:
+      213: -1752032412410467602
+    second: Intro Screens_52
+  - first:
+      213: -3871916789608278389
+    second: Intro Screens_53
+  - first:
+      213: -8760336130261395907
+    second: Intro Screens_54
+  - first:
+      213: 580011094646603497
+    second: Intro Screens_55
+  - first:
+      213: 3167992285855523166
+    second: Intro Screens_56
+  - first:
+      213: -7368319546602092717
+    second: Intro Screens_57
+  - first:
+      213: -7389113702450493342
+    second: Intro Screens_58
+  - first:
+      213: 3558701808696008156
+    second: Intro Screens_59
+  - first:
+      213: -2338451105322683356
+    second: Intro Screens_60
+  - first:
+      213: 438252117853846784
+    second: Intro Screens_61
+  - first:
+      213: 4113890360953763724
+    second: Intro Screens_62
+  - first:
+      213: 4825743229510865899
+    second: Intro Screens_63
+  - first:
+      213: -7213542843825170281
+    second: Intro Screens_64
+  - first:
+      213: 6883898066752184999
+    second: Intro Screens_65
+  - first:
+      213: -1252848566121045381
+    second: Intro Screens_66
+  - first:
+      213: -6920326289012405963
+    second: Intro Screens_67
+  - first:
+      213: -7124219178996738619
+    second: Intro Screens_68
+  - first:
+      213: -3531731463743316419
+    second: Intro Screens_69
+  - first:
+      213: -6682814934142858973
+    second: Intro Screens_70
+  - first:
+      213: -8648207263051275486
+    second: Intro Screens_71
+  - first:
+      213: 6151905270718068586
+    second: Intro Screens_72
+  - first:
+      213: 9222213207564297870
+    second: Intro Screens_73
+  - first:
+      213: 7202781392426343166
+    second: Intro Screens_74
+  - first:
+      213: 1688029842168231796
+    second: Intro Screens_75
+  - first:
+      213: 5628086519468375839
+    second: Intro Screens_76
+  - first:
+      213: 5920921616117642781
+    second: Intro Screens_77
+  - first:
+      213: 2270351338885055259
+    second: Intro Screens_78
+  - first:
+      213: 2742108844591730333
+    second: Intro Screens_79
+  - first:
+      213: -7693868800207447739
+    second: Intro Screens_80
+  - first:
+      213: 8179956685112652184
+    second: Intro Screens_81
+  - first:
+      213: -9171297534975822698
+    second: Intro Screens_82
+  - first:
+      213: 530083070978296882
+    second: Intro Screens_83
+  - first:
+      213: 7233524756675673155
+    second: Intro Screens_84
+  - first:
+      213: 3177904039034175781
+    second: Intro Screens_85
+  - first:
+      213: -1194305539008287898
+    second: Intro Screens_86
+  - first:
+      213: 3344034909703772872
+    second: Intro Screens_87
+  - first:
+      213: -8324234297047361364
+    second: Intro Screens_88
+  - first:
+      213: 8905449237096169528
+    second: Intro Screens_89
+  - first:
+      213: -274846602569826143
+    second: Intro Screens_90
+  - first:
+      213: 6373353051154616114
+    second: Intro Screens_91
+  - first:
+      213: -1444141388091566830
+    second: Intro Screens_92
+  - first:
+      213: -3300931331270078150
+    second: Intro Screens_93
+  - first:
+      213: -8673136536774511140
+    second: Intro Screens_94
+  - first:
+      213: 1169079505885224440
+    second: Intro Screens_95
+  - first:
+      213: 7536436683181247960
+    second: Intro Screens_96
+  - first:
+      213: 3453221354457207286
+    second: Intro Screens_97
+  - first:
+      213: 4976626003706122614
+    second: Intro Screens_98
+  - first:
+      213: -5488313512764099594
+    second: Intro Screens_99
+  - first:
+      213: 7607407759504452825
+    second: Intro Screens_100
+  - first:
+      213: 3623134405086435550
+    second: Intro Screens_101
+  - first:
+      213: -5225313345428323912
+    second: Intro Screens_102
+  - first:
+      213: -6320046374145966811
+    second: Intro Screens_103
+  - first:
+      213: 8400910412130603611
+    second: Intro Screens_104
+  - first:
+      213: -3181238414320397116
+    second: Intro Screens_105
+  - first:
+      213: 537345709902481835
+    second: Intro Screens_106
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Intro Screens_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1005
+        width: 720
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6df7005c5afc0f50800000000000000
+      internalID: 6849124407710317933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_1
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1005
+        width: 720
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230097d3679622f80800000000000000
+      internalID: -8132822020519296974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 732
+        width: 165
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c74f2da2da80d10800000000000000
+      internalID: 2092112426353064991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 894
+        width: 99
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dc62a59341c71e0800000000000000
+      internalID: -2198860281505460844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_4
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 750
+        width: 99
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0598bf747966723e0800000000000000
+      internalID: -2078579903074432688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_5
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 750
+        width: 114
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7f5798d0d6191f0800000000000000
+      internalID: -1039930134037661784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_6
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 750
+        width: 96
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa2d130367076a90800000000000000
+      internalID: -7320874547432051978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_7
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 894
+        width: 87
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207b1b3193b08cf60800000000000000
+      internalID: 8054700273323587330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_8
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 894
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aa37521f9d70ee0800000000000000
+      internalID: -1294826738107045301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_9
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 969
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8769c156d2582420800000000000000
+      internalID: 2605423464882464650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_10
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 966
+        width: 84
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df41756a1ecabeed0800000000000000
+      internalID: -2383621492604201731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_11
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 966
+        width: 84
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5328d70694aa40d0800000000000000
+      internalID: -3437754401260297382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_12
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 966
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87514edf455b9b140800000000000000
+      internalID: 4736015859798250872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_13
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 966
+        width: 81
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22efd0244d59b58c0800000000000000
+      internalID: -4009446304369476062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 843
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62809fa30a48c020800000000000000
+      internalID: 2362219384246665835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 804
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6c744a17a5faf50800000000000000
+      internalID: 6894828998661490384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_16
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 804
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df214f6f3a24bd770800000000000000
+      internalID: 8636569982403351293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_17
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 804
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902f3059a7d7a7f30800000000000000
+      internalID: 4574106336987705865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_18
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 732
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be557f0303f8a5270800000000000000
+      internalID: 8240055905370461675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_19
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 732
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322919508f42fb760800000000000000
+      internalID: 7475734554122228259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_20
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 732
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9492fb44d09c17a0800000000000000
+      internalID: -6405085328546032485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 237
+        width: 720
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a253872d5336384c0800000000000000
+      internalID: -4286473337511070422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 489
+        width: 618
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75baa76ebec861570800000000000000
+      internalID: 8437085896737205079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_23
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 237
+        width: 618
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945132cb657ee0c20800000000000000
+      internalID: 3174729147052397897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 84
+        width: 186
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dda5cde03d02af90800000000000000
+      internalID: -6943973171653136938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a41dddc4b620cbb0800000000000000
+      internalID: -4917888235098794848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_26
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373b4851e8149a480800000000000000
+      internalID: -8887500311136783501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_27
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ef12d7302232630800000000000000
+      internalID: 3900999100612607642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_28
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1da3b9ecf22ff20800000000000000
+      internalID: 3454876428560683495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_29
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f941f2ff848855b0800000000000000
+      internalID: -5379404001102968329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_30
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe8f4b8ecbb4c320800000000000000
+      internalID: 2577391382537670332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_31
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d36b2450c8f6d6b0800000000000000
+      internalID: -5271752808861047852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_32
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 195
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa3a48953decc190800000000000000
+      internalID: -7940711228516975955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_33
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b21c2864dcefe0f0800000000000000
+      internalID: -1085388588148059463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_34
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 195
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a91e5d3723c8ec0800000000000000
+      internalID: -3563417732065944953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_35
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 195
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7bb0a3c85d81330800000000000000
+      internalID: 3681927493621364653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_36
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 195
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40574cea25fa0900800000000000000
+      internalID: 651602660809986122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_37
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 195
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d62648120e1cf90800000000000000
+      internalID: -6935015516614267585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_38
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 195
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193490b95ad63db70800000000000000
+      internalID: 8922595844789191569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_39
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 195
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7060cdc834034a0800000000000000
+      internalID: -6615713580341393493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_40
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 195
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132b037fb7e5519c0800000000000000
+      internalID: -3957152811053960655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_41
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 195
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2a45098bd50a9a0800000000000000
+      internalID: -6223871637749194056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_42
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 195
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4544e4fd0bbc27930800000000000000
+      internalID: 4139594968028038228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_43
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 195
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cde2b28404bc730800000000000000
+      internalID: 4020377771064613952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_44
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f04f9587a374fcd0800000000000000
+      internalID: -2525266327709466378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_45
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caab02a12e138dd40800000000000000
+      internalID: 5609288183060675244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_46
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5ebd9242bf1cd60800000000000000
+      internalID: 7908878553378973124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_47
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13757348f1bf1550800000000000000
+      internalID: 6133816897343681306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_48
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8889d42b3faf260800000000000000
+      internalID: 7132280907026172076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_49
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332cafefddee17ff0800000000000000
+      internalID: -39988284436594125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_50
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 147
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0537eebcecd59bb70800000000000000
+      internalID: 8915260080122655568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_51
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 168
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715190077a5b04b20800000000000000
+      internalID: 3116690672884192535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_52
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 168
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaad47bdc78fa7e0800000000000000
+      internalID: -1752032412410467602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_53
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 147
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b861783b130344ac0800000000000000
+      internalID: -3871916789608278389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_54
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 147
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36dfba24b80d6680800000000000000
+      internalID: -8760336130261395907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_55
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 147
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee323e740d9c0800800000000000000
+      internalID: 580011094646603497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_56
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 147
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51a8910338f6fb20800000000000000
+      internalID: 3167992285855523166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_57
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 147
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357073159687eb990800000000000000
+      internalID: -7368319546602092717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_58
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 147
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2688770ac38947990800000000000000
+      internalID: -7389113702450493342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_59
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 147
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd9dd0b07c036130800000000000000
+      internalID: 3558701808696008156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_60
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 141
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4243f9efb172c8fd0800000000000000
+      internalID: -2338451105322683356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_61
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 147
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dbdbeaafbf41600800000000000000
+      internalID: 438252117853846784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_62
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 141
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c877d89ac79771930800000000000000
+      internalID: 4113890360953763724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_63
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 141
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3dd3c36eb78f240800000000000000
+      internalID: 4825743229510865899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_64
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7985db5a00954eb90800000000000000
+      internalID: -7213542843825170281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_65
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a223cab1d4888f50800000000000000
+      internalID: 6883898066752184999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_66
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b726ff2fddcfc9ee0800000000000000
+      internalID: -1252848566121045381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_67
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5394e95d7ef06ff90800000000000000
+      internalID: -6920326289012405963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_68
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5dfd50760b12d90800000000000000
+      internalID: -7124219178996738619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_69
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e528512f4ccfec0800000000000000
+      internalID: -3531731463743316419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_70
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3294db6793fd143a0800000000000000
+      internalID: -6682814934142858973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_71
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 99
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22320ed70556bf780800000000000000
+      internalID: -8648207263051275486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_72
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 99
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67f001ef35ff5550800000000000000
+      internalID: 6151905270718068586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_73
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 99
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8629c70d02ebff70800000000000000
+      internalID: 9222213207564297870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_74
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 93
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa9d52b38b65f360800000000000000
+      internalID: 7202781392426343166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_75
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 93
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47732b8a2361d6710800000000000000
+      internalID: 1688029842168231796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_76
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 99
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fb31ededafa1e40800000000000000
+      internalID: 5628086519468375839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_77
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 99
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16bf97e6d65b2250800000000000000
+      internalID: 5920921616117642781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_78
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 111
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13839d8388e18f10800000000000000
+      internalID: 2270351338885055259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_79
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 111
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ec851477ded0620800000000000000
+      internalID: 2742108844591730333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_80
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 99
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5499c2f0713e93590800000000000000
+      internalID: -7693868800207447739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_81
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 99
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891b83e044b058170800000000000000
+      internalID: 8179956685112652184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_82
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 99
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694b95acb7109b080800000000000000
+      internalID: -9171297534975822698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_83
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 111
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c0c1b9ebb3b5700800000000000000
+      internalID: 530083070978296882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_84
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 99
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cb5abf074a26460800000000000000
+      internalID: 7233524756675673155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_85
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 99
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52149e0e2ee2a1c20800000000000000
+      internalID: 3177904039034175781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_86
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b2122a079fc6fe0800000000000000
+      internalID: -1194305539008287898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_87
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca166d6806686e20800000000000000
+      internalID: 3344034909703772872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_88
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca85e51b2016a7c80800000000000000
+      internalID: -8324234297047361364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_89
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8300466e5e2869b70800000000000000
+      internalID: 8905449237096169528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_90
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a04a1e987c8f2cf0800000000000000
+      internalID: -274846602569826143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_91
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f093225d2b27850800000000000000
+      internalID: 6373353051154616114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_92
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 51
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215dc551f0165fbe0800000000000000
+      internalID: -1444141388091566830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_93
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 51
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3190bb717cb032d0800000000000000
+      internalID: -3300931331270078150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_94
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 72
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5f715a544d2a780800000000000000
+      internalID: -8673136536774511140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_95
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 72
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd5a76dd97693010800000000000000
+      internalID: 1169079505885224440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_96
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 72
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddcd3dcb3dc69860800000000000000
+      internalID: 7536436683181247960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_97
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 72
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f11733a68e4cef20800000000000000
+      internalID: 3453221354457207286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_98
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 72
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67110eaabf6801540800000000000000
+      internalID: 4976626003706122614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_99
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 51
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f338bf30f795d3b0800000000000000
+      internalID: -5488313512764099594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_100
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 51
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc20de2d01f29960800000000000000
+      internalID: 7607407759504452825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_101
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 51
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed85ca49b85f74230800000000000000
+      internalID: 3623134405086435550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_102
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 51
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b103ad7235fb77b0800000000000000
+      internalID: -5225313345428323912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_103
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 45
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52db809ce4faa48a0800000000000000
+      internalID: -6320046374145966811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_104
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 51
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52dce88287069470800000000000000
+      internalID: 8400910412130603611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_105
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 51
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c41b906488f9d3d0800000000000000
+      internalID: -3181238414320397116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intro Screens_106
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 51
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba941508319057700800000000000000
+      internalID: 537345709902481835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

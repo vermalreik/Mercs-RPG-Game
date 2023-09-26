@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 01417acf51f094048b3a974fcb91b254
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6447993710549254619
+    second: HP Bars & In-battle Menu_0
+  - first:
+      213: -4159276998267144507
+    second: HP Bars & In-battle Menu_1
+  - first:
+      213: 32741218126228441
+    second: HP Bars & In-battle Menu_2
+  - first:
+      213: 3350280046358223193
+    second: HP Bars & In-battle Menu_3
+  - first:
+      213: 3463970919428117036
+    second: HP Bars & In-battle Menu_4
+  - first:
+      213: -1738088521575650236
+    second: HP Bars & In-battle Menu_5
+  - first:
+      213: -5531628477219098500
+    second: HP Bars & In-battle Menu_6
+  - first:
+      213: -4630044114968880788
+    second: HP Bars & In-battle Menu_7
+  - first:
+      213: -2465594896262269578
+    second: HP Bars & In-battle Menu_8
+  - first:
+      213: -3331977610770577892
+    second: HP Bars & In-battle Menu_9
+  - first:
+      213: 7679654551868941945
+    second: HP Bars & In-battle Menu_10
+  - first:
+      213: -1399386615087557269
+    second: HP Bars & In-battle Menu_11
+  - first:
+      213: 2439796536852912209
+    second: HP Bars & In-battle Menu_12
+  - first:
+      213: 1673175741956167258
+    second: HP Bars & In-battle Menu_13
+  - first:
+      213: -4695157779520676872
+    second: HP Bars & In-battle Menu_14
+  - first:
+      213: 733060544893491078
+    second: HP Bars & In-battle Menu_15
+  - first:
+      213: -3489422941834976678
+    second: HP Bars & In-battle Menu_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_0
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 576
+        width: 720
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 21, z: 24, w: 21}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e32c812ef1486a0800000000000000
+      internalID: -6447993710549254619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_1
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 732
+        width: 719
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 18, z: 261, w: 18}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c675db5b974746c0800000000000000
+      internalID: -4159276998267144507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 732
+        width: 359
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 17, y: 18, z: 18, w: 18}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db6de3e6f1547000800000000000000
+      internalID: 32741218126228441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 645
+        width: 312
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d24d93f59e7e20800000000000000
+      internalID: 3350280046358223193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 792
+        width: 300
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22dbc4c23f721030800000000000000
+      internalID: 3463970919428117036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 26
+        width: 312
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 45, y: 21, z: 24, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cac4bc2b111e7e0800000000000000
+      internalID: -1738088521575650236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_6
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 173
+        width: 300
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 18, z: 42, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70bbe13535bb33b0800000000000000
+      internalID: -5531628477219098500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_7
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 173
+        width: 241
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 21, z: 21, w: 21}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6954e09867cebfb0800000000000000
+      internalID: -4630044114968880788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 846
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6757540518278cdd0800000000000000
+      internalID: -2465594896262269578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 66
+        width: 192
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16077e340072c1d0800000000000000
+      internalID: -3331977610770577892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_10
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 852
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9762cd9502d939a60800000000000000
+      internalID: 7679654551868941945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 855
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b651540b941649ce0800000000000000
+      internalID: -1399386615087557269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_12
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 840
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158985f0606ebd120800000000000000
+      internalID: 2439796536852912209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_13
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 846
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a561912f870583710800000000000000
+      internalID: 1673175741956167258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 828
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb124320e277deb0800000000000000
+      internalID: -4695157779520676872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 816
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871b318eaa5c2a00800000000000000
+      internalID: 733060544893491078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP Bars & In-battle Menu_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 80
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52e3d87254139fc0800000000000000
+      internalID: -3489422941834976678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

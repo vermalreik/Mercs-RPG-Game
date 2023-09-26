@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 10be0e4f5ca04734189e6ecc007dda6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3290379921135023473
+    second: Trainers Backs_0
+  - first:
+      213: 4507363477293368144
+    second: Trainers Backs_1
+  - first:
+      213: 2632008825484790903
+    second: Trainers Backs_2
+  - first:
+      213: 2829133673692407444
+    second: Trainers Backs_3
+  - first:
+      213: -624286802684837281
+    second: Trainers Backs_4
+  - first:
+      213: -8811611884837777776
+    second: Trainers Backs_5
+  - first:
+      213: 6751293646330295207
+    second: Trainers Backs_6
+  - first:
+      213: 2736221304240441911
+    second: Trainers Backs_7
+  - first:
+      213: 8866197343853078336
+    second: Trainers Backs_8
+  - first:
+      213: -3652453372752819347
+    second: Trainers Backs_9
+  - first:
+      213: 684928270877996367
+    second: Trainers Backs_10
+  - first:
+      213: -2785478188241406105
+    second: Trainers Backs_11
+  - first:
+      213: 6357431919669378165
+    second: Trainers Backs_12
+  - first:
+      213: 6913594603289514198
+    second: Trainers Backs_13
+  - first:
+      213: 6098555175164269521
+    second: Trainers Backs_14
+  - first:
+      213: 7363970097652814204
+    second: Trainers Backs_15
+  - first:
+      213: -5107037943651937466
+    second: Trainers Backs_16
+  - first:
+      213: 7711447098859283366
+    second: Trainers Backs_17
+  - first:
+      213: 5623655162903863569
+    second: Trainers Backs_18
+  - first:
+      213: -8671077274961157818
+    second: Trainers Backs_19
+  - first:
+      213: 4494645337019109187
+    second: Trainers Backs_20
+  - first:
+      213: -8559323051924719905
+    second: Trainers Backs_21
+  - first:
+      213: 2871849216222622346
+    second: Trainers Backs_22
+  - first:
+      213: -3856664253163794775
+    second: Trainers Backs_23
+  - first:
+      213: -3172975698921081906
+    second: Trainers Backs_24
+  - first:
+      213: -790448382927531234
+    second: Trainers Backs_25
+  - first:
+      213: 4835167552348329313
+    second: Trainers Backs_26
+  - first:
+      213: 9035899036249483788
+    second: Trainers Backs_27
+  - first:
+      213: 6366191184005588756
+    second: Trainers Backs_28
+  - first:
+      213: -7172337635623687502
+    second: Trainers Backs_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trainers Backs_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1104
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a4ba815e83652d0800000000000000
+      internalID: -3290379921135023473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1104
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05304a9933f5d8e30800000000000000
+      internalID: 4507363477293368144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_2
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1104
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cc6b0f416c68420800000000000000
+      internalID: 2632008825484790903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1104
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496288a361a134720800000000000000
+      internalID: 2829133673692407444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1104
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f528108e5761657f0800000000000000
+      internalID: -624286802684837281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 888
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e42a93dadd6b580800000000000000
+      internalID: -8811611884837777776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 888
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a37edb2dc961bd50800000000000000
+      internalID: 6751293646330295207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 888
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a8b1277c209f520800000000000000
+      internalID: 2736221304240441911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_8
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 888
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047efd4528f0b0b70800000000000000
+      internalID: 8866197343853078336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_9
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 888
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b046e4201ef4dc0800000000000000
+      internalID: -3652453372752819347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f453e4a22aa518900800000000000000
+      internalID: 684928270877996367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767b54c885ef759d0800000000000000
+      internalID: -2785478188241406105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_12
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7f97d5a22a3850800000000000000
+      internalID: 6357431919669378165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_13
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0112279a502ff50800000000000000
+      internalID: 6913594603289514198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 456
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71d13fa9c3123660800000000000000
+      internalID: 7363970097652814204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 456
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6435f2a6c082029b0800000000000000
+      internalID: -5107037943651937466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_17
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a369b78740940b60800000000000000
+      internalID: 7711447098859283366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 456
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1112d24439c3b0e40800000000000000
+      internalID: 5623655162903863569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 240
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fc360de10306e30800000000000000
+      internalID: 4494645337019109187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6f634980d273980800000000000000
+      internalID: -8559323051924719905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 240
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82fe6d75abdad720800000000000000
+      internalID: 2871849216222622346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 240
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae89349b406a7ac0800000000000000
+      internalID: -3856664253163794775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13925a3263c705f0800000000000000
+      internalID: -790448382927531234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 24
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16597336547f91340800000000000000
+      internalID: 4835167552348329313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_27
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 24
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ae1f99c46f56d70800000000000000
+      internalID: 9035899036249483788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trainers Backs_28
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 24
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41760eef621495850800000000000000
+      internalID: 6366191184005588756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
