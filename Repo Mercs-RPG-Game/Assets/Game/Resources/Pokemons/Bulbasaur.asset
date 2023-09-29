@@ -16,6 +16,7 @@ MonoBehaviour:
   description: 
   frontSprite: {fileID: 0}
   backSprite: {fileID: 0}
+  iconSprites: []
   type1: 0
   type2: 0
   maxHp: 0
@@ -24,3 +25,10 @@ MonoBehaviour:
   spAttack: 0
   spDefense: 0
   speed: 0
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: f5a42bacbcdbc0546b4551bd2c79db06, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: f6ba331d94b9ef8489c85d175ed89504, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: 6b1823af62ad2434280bb4bc9ef2bdcb, type: 2}
+    level: 7
