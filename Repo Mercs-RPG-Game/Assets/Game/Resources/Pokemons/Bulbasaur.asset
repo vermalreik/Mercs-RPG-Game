@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb423e6fd690b574b96c7cf26d604a87, type: 3}
   m_Name: Bulbasaur
   m_EditorClassIdentifier: 
-  name: 
+  name: Bulbasaur
   description: 
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: 6aa65ac0bde004f4d9fe87c2e03ffa2d, type: 3}
+  backSprite: {fileID: 21300000, guid: e6ec771c203cae341a51d7438afe3374, type: 3}
   iconSprites: []
   type1: 0
   type2: 0
