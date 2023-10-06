@@ -9,8 +9,12 @@ public class BattleUnit : MonoBehaviour
     [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
 
-    public Pokemon Pokemon { get;set; }
+    public Pokemon Pokemon { get;set; } // to store the pokemon we create in Setup()
 
+    // For testing the battle system we will set these values from the Inspector
+    // but later on we will start these dynamically when we start a battle
+
+    // This function will create a Pokemon based from the base and level
     public void Setup()
     {
         Pokemon =  new Pokemon(_base, level);

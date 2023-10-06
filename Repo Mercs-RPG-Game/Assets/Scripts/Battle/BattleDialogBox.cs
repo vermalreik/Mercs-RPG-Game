@@ -34,16 +34,17 @@ public class BattleDialogBox : MonoBehaviour
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
         //yield return new WaitForSeconds(1f);
+        // :D Si hago WaitForSeconds(1f / 30) in one second it willshow 30 letters
     }
 
     public void EnableDialogText(bool enabled)
     {
-        dialogText.enabled = enabled;
+        dialogText.enabled = enabled; // "enabled" for texts
     }
 
     public void EnableActionSelector(bool enabled)
     {
-        actionSelector.SetActive(enabled);
+        actionSelector.SetActive(enabled); // "SetActive" for game objects
     }
 
     public void EnableMoveSelector(bool enabled)
@@ -52,6 +53,7 @@ public class BattleDialogBox : MonoBehaviour
         moveDetails.SetActive(enabled);
     }
 
+    // Changues the color of the selectedAction text
     public void UpdateActionSelection(int selectedAction)
     {
         for(int i=0; i<actionTexts.Count; ++i)
@@ -63,7 +65,8 @@ public class BattleDialogBox : MonoBehaviour
         }
     }
 
-    public void UpdateMoveSelection(int selectedMove, Move move)
+    // Changues the color of the selectedMove text
+    public void UpdateMoveSelection(int selectedMove, Move move) // el parametro Move es para el texto PP y Type
     {
         for(int i=0; i<moveTexts.Count; ++i)
         {

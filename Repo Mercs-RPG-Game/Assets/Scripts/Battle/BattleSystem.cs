@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy }
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy } // Busy: when the player and the enemy are attacking
 public enum BattleAction { Move, SwitchPokemon, UseItem, Run }
 
 
@@ -37,7 +37,12 @@ public class BattleSystem : MonoBehaviour
         // it's called string interpolation
 
         yield return dialogBox.TypeDialog($"A wild {enemyUnit.Pokemon.Base.Name} appeared.");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f); // wait 1 second
+
+        // Si no estuvieran dentro de una rutina las llamaria de esta forma:
+        // StartCoroutine(xD);
+        // pero al estar dentro de una rutina las llamo asi:
+        // yield return , esto esperara a k esta rutina se complete y solo despues de eso the execution will come down
 
         PlayerAction();
     }
@@ -55,6 +60,51 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableActionSelector(false);
         dialogBox.EnableDialogText(false);
         dialogBox.EnableMoveSelector(true);
+    }
+
+    // The player pokemon perform the attack or move and the enemy pokemon will take damage of it
+    IEnumerator PerformPlayerMove()
+    {
+        state = BattleState.Busy; // because if the state is still in PlayerMove the player will still be able to change the value of the current move
+
+        var move = playerUnit.Pokemon.Moves[currentMove];
+        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} used {move.Base.Name}");
+
+        yield return new WaitForSeconds(1f);
+
+        bool isFainted = enemyUnit.Pokemon.TakeDamage(move, playerUnit.Pokemon);
+        yield return enemyHud.UpdateHP();
+
+        if(isFainted)
+        {
+            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} fainted");
+        }
+        else
+        {
+            StartCoroutine(EnemyMove());
+        }
+    }
+
+    IEnumerator EnemyMove()
+    {
+        state = BattleState.EnemyMove;
+
+        var move = enemyUnit.Pokemon.GetRandomMove();
+        yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} used {move.Base.Name}");
+
+        yield return new WaitForSeconds(1f);
+
+        bool isFainted = playerUnit.Pokemon.TakeDamage(move, playerUnit.Pokemon);
+        yield return playerHud.UpdateHP();
+
+        if(isFainted)
+        {
+            yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} fainted");
+        }
+        else
+        {
+            PlayerAction();
+        }
     }
 
     private void Update()
@@ -122,5 +172,12 @@ public class BattleSystem : MonoBehaviour
         }
 
         dialogBox.UpdateMoveSelection(currentMove, playerUnit.Pokemon.Moves[currentMove]);
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            StartCoroutine(PerformPlayerMove());
+        }
     }
 }

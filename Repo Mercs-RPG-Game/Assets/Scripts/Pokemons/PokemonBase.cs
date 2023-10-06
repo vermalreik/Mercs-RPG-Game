@@ -98,11 +98,11 @@ public class PokemonBase : ScriptableObject
     }
 }
 
-[System.Serializable]
+[System.Serializable] // Serializable so it appears on the Inspector in Unity
 public class LearnableMove
 {
     [SerializeField] MoveBase moveBase;
-    [SerializeField] int level;
+    [SerializeField] int level; // level at which this move will be learnt
 
     public MoveBase Base
     {

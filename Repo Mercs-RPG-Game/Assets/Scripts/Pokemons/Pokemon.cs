@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// :D En esta clase calculamos los stats de cada Pokemon basandonos en su nivel, mediante formulas obtenidas de la Bulbapedia
 public class Pokemon // This is going to be plain C#, thats why we dont inherit from MonoBeahaviour
 {
     public PokemonBase Base{ get; set; }
     public int Level { get; set; }
 
     public int HP { get; set; }
-    public List<Move> Moves { get; set; }
+    public List<Move> Moves { get; set; } // Son los moves que tiene un pokemon en concreto
 
     public Pokemon(PokemonBase pBase, int pLevel)
     {
@@ -21,10 +22,10 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         foreach (var move in Base.LearnableMoves)
         {
             if (move.Level <= Level)
-                Moves.Add(new Move(move.Base));
+                Moves.Add(new Move(move.Base)); // Here we create a move :D usamos la clase Move.cs
 
             if (Moves.Count >= 4)
-                break;
+                break; // exit the loop calling break
         }
         // :D hasta aki
     }
@@ -60,5 +61,30 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         {
             return Mathf.FloorToInt(Base.Speed * Level / 100f) + 10;
         }
+    }
+
+    public bool TakeDamage(Move move, Pokemon attacker)
+    {
+        // Formula taken from 
+        float modifiers = Random.Range(0.85f, 1f);
+        float a = (2 * attacker.Level + 10) / 250f;
+        float d = a * move.Base.Power * ((float)attacker.Attack / Defense) + 2;
+        int damage = Mathf.FloorToInt(d * modifiers);
+
+        HP -= damage;
+        if(HP <= 0)
+        {
+            HP = 0;
+            return true;
+        }
+
+        return false;
+
+    }
+
+    public Move GetRandomMove()
+    {
+        int r = Random.Range(0, Moves.Count);
+        return Moves[r];
     }
 }
