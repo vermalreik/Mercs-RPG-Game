@@ -35,6 +35,8 @@ public class BattleDialogBox : MonoBehaviour
         }
         //yield return new WaitForSeconds(1f);
         // :D Si hago WaitForSeconds(1f / 30) in one second it willshow 30 letters
+
+        yield return new WaitForSeconds(1f);
     }
 
     public void EnableDialogText(bool enabled)
