@@ -70,6 +70,7 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.Busy; // because if the state is still in PlayerMove the player will still be able to change the value of the current move
 
         var move = playerUnit.Pokemon.Moves[currentMove];
+        move.PP--;
         yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} used {move.Base.Name}");
 
         playerUnit.PlayAttackAnimation();
@@ -99,6 +100,7 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
 
         var move = enemyUnit.Pokemon.GetRandomMove();
+        move.PP--;
         yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} used {move.Base.Name}");
 
         enemyUnit.PlayAttackAnimation();
