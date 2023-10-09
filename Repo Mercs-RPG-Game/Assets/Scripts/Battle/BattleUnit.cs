@@ -6,8 +6,6 @@ using DG.Tweening;
 
 public class BattleUnit : MonoBehaviour
 {
-    [SerializeField]  PokemonBase _base;
-    [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
 
     public Pokemon Pokemon { get;set; } // to store the pokemon we create in Setup()
@@ -27,9 +25,9 @@ public class BattleUnit : MonoBehaviour
     }
 
     // This function will create a Pokemon based from the base and level
-    public void Setup()
+    public void Setup(Pokemon pokemon)
     {
-        Pokemon =  new Pokemon(_base, level);
+        Pokemon =  pokemon;
         if(isPlayerUnit)
             image.sprite = Pokemon.Base.BackSprite;
         else

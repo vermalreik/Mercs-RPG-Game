@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // :D En esta clase calculamos los stats de cada Pokemon basandonos en su nivel, mediante formulas obtenidas de la Bulbapedia
+[System.Serializable]
 public class Pokemon // This is going to be plain C#, thats why we dont inherit from MonoBeahaviour
 {
-    public PokemonBase Base{ get; set; }
-    public int Level { get; set; }
+    [SerializeField] PokemonBase _base;
+    [SerializeField] int level;
+
+    public PokemonBase Base{ 
+        get{
+            return _base;
+        }
+    }
+    public int Level { 
+        get{
+            return level;
+        }
+     }
 
     public int HP { get; set; }
     public List<Move> Moves { get; set; } // Son los moves que tiene un pokemon en concreto
 
-    public Pokemon(PokemonBase pBase, int pLevel)
+    public void Init() // Init stands for Initialization
     {
-        Base = pBase;
-        Level = pLevel;
         HP = MaxHp;
 
         // This code will generate de moves of pokemons based on its level
