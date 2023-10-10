@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Charmander
   m_EditorClassIdentifier: 
   name: Charmander
-  description: 
+  description: A flame burns on the tip of its tail from birth. It is said that a
+    Charmander dies if its flame ever goes out.
   frontSprite: {fileID: 21300000, guid: 85c43a33bb66f374fafa3b551f66c14b, type: 3}
   backSprite: {fileID: 21300000, guid: 3ed5533186c6143428386d277b976969, type: 3}
   iconSprites: []
