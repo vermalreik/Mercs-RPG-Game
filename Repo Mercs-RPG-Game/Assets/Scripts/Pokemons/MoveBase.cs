@@ -71,10 +71,15 @@ public class MoveEffects
     // Unity can't serialize Dictionary so this will not be shown in the Inspector
     // So instead of using a Dictionary, we'll have to create another class called StatBoost
     [SerializeField] List<StatBoost> boosts;
+    [SerializeField] ConditionID status;
 
     public List<StatBoost> Boosts
     {
         get { return boosts; }
+    }
+
+    public ConditionID Status{
+        get {return status;}
     }
 }
 

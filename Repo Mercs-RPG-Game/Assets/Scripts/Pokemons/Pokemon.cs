@@ -28,9 +28,11 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
     // but in Dictionaries, along with the value, we also store a key
 
     public Dictionary<Stat, int> StatBoosts{ get; private set;}
+    public Condition Status{ get; private set;}
 
     public Queue<string> StatusChanges{get; private set;} = new Queue<string>();
     // Using a queue, the first messages that we add to the queue should be shown first in our dialogue box
+    public bool HpChanged { get; set; }
 
     public void Init() // Init stands for Initialization
     {
@@ -165,21 +167,36 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        HP -= damage;
-        if(HP <= 0)
-        {
-            HP = 0;
-            damageDetails.Fainted = true;
-        }
+        UpdateHP(damage);
 
         return damageDetails;;
 
+    }
+
+    public void UpdateHP(int damage)
+    {
+        HP = Mathf.Clamp(HP - damage, 0, MaxHp);
+        HpChanged = true;
+    }
+
+    public void SetStatus(ConditionID conditionID)
+    {
+        Status = ConditionsDB.Conditions[conditionID];
+        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
     }
 
     public Move GetRandomMove()
     {
         int r = Random.Range(0, Moves.Count);
         return Moves[r];
+    }
+
+    public void OnAfterTurn()
+    {
+        Status?.OnAfterTurn?.Invoke(this);
+        // Null Conditional Operator
+        // It'll only execute the code to the right of it, if the item on which its supplied is not null
+        // we only call the OnAfterTurn if it's not null :D so we don't have a null reference error
     }
 
     public void OnBattleOver()
