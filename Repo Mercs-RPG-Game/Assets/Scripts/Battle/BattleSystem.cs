@@ -51,12 +51,21 @@ public class BattleSystem : MonoBehaviour
         // pero al estar dentro de una rutina las llamo asi:
         // yield return , esto esperara a k esta rutina se complete y solo despues de eso the execution will come down
 
-        ActionSelection();
+        ChooseFirstTurn();
+    }
+
+    void ChooseFirstTurn()
+    {
+        if(playerUnit.Pokemon.Speed >= enemyUnit.Pokemon.Speed)
+            ActionSelection();
+        else
+            StartCoroutine(EnemyMove());
     }
 
     void BattleOver(bool won) // its a function that triggers the battle over state
     {
         state = BattleState.BattleOver;  
+        playerParty.Pokemons.ForEach(p => p.OnBattleOver()); // call  OnBattleOver of all the pokemons
         OnBattleOver(won); // It's an event that Notifies the Game Controller that the battle is over
     }
 
@@ -120,14 +129,7 @@ public class BattleSystem : MonoBehaviour
 
         if(move.Base.Category == MoveCategory.Status)
         {
-            var effects = move.Base.Effects; 
-            if(effects.Boosts != null)
-            {
-                if(move.Base.Target == MoveTarget.Self)
-                    sourceUnit.Pokemon.ApplyBoost(effects.Boosts);
-                else
-                    targetUnit.Pokemon.ApplyBoost(effects.Boosts);
-            }
+            yield return RunMoveEffects(move, sourceUnit.Pokemon, targetUnit.Pokemon);
         }
         else
         {
@@ -143,6 +145,29 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             CheckForBattleOver(targetUnit);
+        }
+    }
+
+    IEnumerator RunMoveEffects(Move move, Pokemon source, Pokemon target)
+    {
+        var effects = move.Base.Effects; 
+            if(effects.Boosts != null)
+            {
+                if(move.Base.Target == MoveTarget.Self)
+                    source.ApplyBoost(effects.Boosts);
+                else
+                    target.ApplyBoost(effects.Boosts);
+            }
+            yield return ShowStatusChanges(source);
+            yield return ShowStatusChanges(target);
+    }
+
+    IEnumerator ShowStatusChanges(Pokemon pokemon)
+    {
+        while(pokemon.StatusChanges.Count > 0)
+        {
+            var message = pokemon.StatusChanges.Dequeue();
+            yield return dialogBox.TypeDialog(message);
         }
     }
 
@@ -296,7 +321,11 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SwitchPokemon(Pokemon newPokemon)
     {
-        if(playerUnit.Pokemon.HP > 0){
+        bool currentPokemonFainted = true;
+
+        if(playerUnit.Pokemon.HP > 0)
+        {
+            currentPokemonFainted = false;
             yield return dialogBox.TypeDialog($"Come back {playerUnit.Pokemon.Base.Name}");
             playerUnit.PlayFaintAnimation();
             yield return new WaitForSeconds(2f);
@@ -306,7 +335,10 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveNames(newPokemon.Moves);
         yield return dialogBox.TypeDialog($"Go {newPokemon.Base.Name}.");
 
-        StartCoroutine(EnemyMove());
+        if(currentPokemonFainted)
+            ChooseFirstTurn();
+        else
+            StartCoroutine(EnemyMove());
 
     }
 }
