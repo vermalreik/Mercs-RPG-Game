@@ -72,6 +72,7 @@ public class MoveEffects
     // So instead of using a Dictionary, we'll have to create another class called StatBoost
     [SerializeField] List<StatBoost> boosts;
     [SerializeField] ConditionID status;
+    [SerializeField] ConditionID volatileStatus;
 
     public List<StatBoost> Boosts
     {
@@ -80,6 +81,10 @@ public class MoveEffects
 
     public ConditionID Status{
         get {return status;}
+    }
+
+    public ConditionID VolatileStatus{
+        get {return volatileStatus;}
     }
 }
 
