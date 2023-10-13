@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6d3738673ef54042939a1ad3d04fc5b, type: 3}
-  m_Name: Thunder Wave
+  m_Name: Sing
   m_EditorClassIdentifier: 
-  name: Thunder Wave
+  name: Sing
   description: A special move that causes paralysis. When paralyzed, the victim has
     a one-in-four chance of immobility.
-  type: 4
+  type: 1
   power: 1
-  accuracy: 90
-  pp: 20
+  accuracy: 55
+  pp: 15
   category: 2
   effects:
     boosts: []
-    status: 4
+    status: 3
   target: 0
