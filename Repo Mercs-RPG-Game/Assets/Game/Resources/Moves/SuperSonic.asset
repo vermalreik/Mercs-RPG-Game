@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d3738673ef54042939a1ad3d04fc5b, type: 3}
   m_Name: SuperSonic
   m_EditorClassIdentifier: 
-  name: Poison Powder
+  name: Super Sonic
   description: 
-  type: 8
+  type: 1
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 20
   category: 2
   effects:
     boosts: []
-    status: 1
+    status: 0
+    volatileStatus: 6
   target: 0

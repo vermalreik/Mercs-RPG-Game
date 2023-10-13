@@ -82,6 +82,8 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
             {Stat.SpAttack, 0},
             {Stat.SpDefense, 0},
             {Stat.Speed, 0},
+            {Stat.Accuracy, 0},
+            {Stat.Evasion, 0}
         };
     }
 
