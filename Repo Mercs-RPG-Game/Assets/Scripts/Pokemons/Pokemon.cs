@@ -23,6 +23,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
 
     public int HP { get; set; }
     public List<Move> Moves { get; set; } // Son los moves que tiene un pokemon en concreto
+    public Move CurrentMove { get; set; }
     public Dictionary<Stat, int> Stats {get; private set;} // Dictionary in C# to store the value of the stats at the current level
     // Dictionary in C# is kind of like a list
     // but the difference is that in list we just store a list of values

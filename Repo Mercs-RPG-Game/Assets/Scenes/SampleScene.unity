@@ -7759,7 +7759,7 @@ MonoBehaviour:
   - _base: {fileID: 11400000, guid: 38f36dd1710fffa448721d13f8ed3412, type: 2}
     level: 10
   - _base: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
-    level: 5
+    level: 4
   - _base: {fileID: 11400000, guid: c4cd92f0569dca542a22153e844b8705, type: 2}
     level: 7
 --- !u!224 &1618707243 stripped
