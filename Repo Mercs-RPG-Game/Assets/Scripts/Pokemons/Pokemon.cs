@@ -1,6 +1,7 @@
 //using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 // :D En esta clase calculamos los stats de cada Pokemon basandonos en su nivel, mediante formulas obtenidas de la Bulbapedia
@@ -71,7 +72,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         Stats.Add(Stat.SpDefense, Mathf.FloorToInt(Base.SpDefense * Level / 100f) + 5);
         Stats.Add(Stat.Speed, Mathf.FloorToInt(Base.Speed * Level / 100f) + 5);
 
-        MaxHp = Mathf.FloorToInt(Base.Speed * Level / 100f) + 10 + Level;
+        MaxHp = Mathf.FloorToInt(Base.MaxHp * Level / 100f) + 10 + Level;
     }
 
     void ResetStatBoost()
@@ -220,8 +221,13 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
 
     public Move GetRandomMove()
     {
-        int r = Random.Range(0, Moves.Count);
-        return Moves[r];
+        var movesWithPP = Moves.Where(x => x.PP > 0).ToList();
+
+        int r = Random.Range(0, movesWithPP.Count);
+        return movesWithPP[r];
+
+        // if the enemy doesn't have any move with PP, then this list will be empty
+        // and we'll get a null reference 0
     }
 
     public bool OnBeforeMove()
