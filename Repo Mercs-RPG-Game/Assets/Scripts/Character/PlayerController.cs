@@ -16,11 +16,11 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
 
-    private Animator animator;
+    private CharacterAnimator animator;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<CharacterAnimator>();
     }
 
     // Start is called before the first frame update
@@ -42,8 +42,8 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                animator.SetFloat("moveX", input.x);
-                animator.SetFloat("moveY", input.y);
+                animator.MoveX = input.x;
+                animator.MoveY = input.y;
 
                 var targetPos = transform.position;
                 targetPos.x += input.x;
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        animator.SetBool("isMoving", isMoving);
+        animator.IsMoving = isMoving;
 
         if(Input.GetKeyDown(KeyCode.Z) | Input.GetKeyDown(KeyCode.E))
             Interact();
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     void Interact()
     {
         // first I find the direction in which the player is facing
-        var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var facingDir = new Vector3(animator.MoveX, animator.MoveY);
 
         // find position of the tile next to the player
         var interactPos = transform.position + facingDir;
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
         {
             if (UnityEngine.Random.Range(1, 101) <= 10) // owo Escribo UnityEngine porque al importar using. System para usar eventos "Random" queda ambiguo por estar en las dos librerias
             {
-                animator.SetBool("isMoving", false);
+                animator.IsMoving = false;
                 //Debug.Log("Encountered a wild pokemon");
                 OnEncountered();
             }
