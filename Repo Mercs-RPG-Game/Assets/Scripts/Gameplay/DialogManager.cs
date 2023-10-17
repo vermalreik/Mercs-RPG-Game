@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
@@ -26,6 +28,8 @@ public class DialogManager : MonoBehaviour
     int currentLine = 0;
     bool isTyping;
 
+    public bool IsShowing{ get; private set; } 
+
     public IEnumerator ShowDialog(Dialog dialog)
     {
         // wait for the frame to end before we start the dialogue will help us avoid lots of problems
@@ -33,6 +37,7 @@ public class DialogManager : MonoBehaviour
 
         OnShowDialog?.Invoke();
 
+        IsShowing = true;
         this.dialog = dialog;
         dialogBox.SetActive(true);
         //dialogText.text = dialog.Lines[0];
@@ -51,6 +56,7 @@ public class DialogManager : MonoBehaviour
             else
             {
                 currentLine = 0;
+                IsShowing = false;
                 dialogBox.SetActive(false);
                 OnCloseDialog?.Invoke();
             }
