@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public event Action OnEncountered; // It's an event :D following the Observer Pattern we will notify whenever th aplayer starts a battle, so the controller passes to the Battle System
+    public event Action<Collider2D> OnEnterTrainersView;
 
     private Vector2 input;
 
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                StartCoroutine(character.Move(input, CheckForEncounters));
+                StartCoroutine(character.Move(input, OnMoveOver));
             }
         }
 
@@ -63,6 +64,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnMoveOver()
+    {
+        CheckForEncounters();
+        CheckIfInTrainerView();
+    }
+
     private void CheckForEncounters()
     {
         if (Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.GrassLayer) != null)
@@ -73,6 +80,17 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log("Encountered a wild pokemon");
                 OnEncountered();
             }
+        }
+    }
+
+    private void CheckIfInTrainerView()
+    {
+        var collider = Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.FovLayer);
+        if (collider != null)
+        {
+            //Debug.Log("In Trainer's view");
+            character.Animator.IsMoving = false;
+            OnEnterTrainersView?.Invoke(collider);
         }
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState{ FreeRoam, Battle, Dialog}
+public enum GameState{ FreeRoam, Battle, Dialog, Cutscene}
 
 public class GameController : MonoBehaviour
 {
@@ -21,6 +21,16 @@ public class GameController : MonoBehaviour
     {
         playerController.OnEncountered += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
+
+        playerController.OnEnterTrainersView += (Collider2D trainerCollider) => // whenever this event is fired we will call this lambda function
+        {
+            var trainer = trainerCollider.GetComponentInParent<TrainerController>();
+            if(trainer != null)
+            {
+                state = GameState.Cutscene;
+                StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+            }
+        };
 
         DialogManager.Instance.OnShowDialog += () =>
         {
