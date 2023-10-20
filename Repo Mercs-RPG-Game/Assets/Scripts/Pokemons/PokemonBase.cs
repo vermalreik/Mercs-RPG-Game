@@ -25,6 +25,8 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int spDefense;
     [SerializeField] int speed;
 
+    [SerializeField] int catchRate = 255;
+
     [SerializeField] List<LearnableMove> learnableMoves;
 
     public string Name
@@ -96,6 +98,8 @@ public class PokemonBase : ScriptableObject
     {
         get { return learnableMoves; }
     }
+
+    public int CatchRate => catchRate; // short way of create properties, if the Property only needs the getter
 }
 
 [System.Serializable] // Serializable so it appears on the Inspector in Unity

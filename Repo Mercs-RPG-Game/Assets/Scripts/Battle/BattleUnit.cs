@@ -45,6 +45,7 @@ public class BattleUnit : MonoBehaviour
         hud.gameObject.SetActive(true);
         hud.SetData(pokemon);
 
+        transform.localScale = new Vector3(1, 1, 1); // when starting a new battle the scale of the Enemy Unit will be reset
         image.color = originalColor;
         PlayEnterAnimation();
     }
@@ -89,5 +90,23 @@ public class BattleUnit : MonoBehaviour
         sequence.Join(image.DOFade(0f, 0.5f));
         // If we use Append() here too then we will only start playing the fade animation once the first one is complete
         // Join() will make that both of them play toguether
+    }
+
+    public IEnumerator PlayCapturedAnimation()
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(image.DOFade(0, 0.5f));
+        sequence.Join(transform.DOLocalMoveY(originalPos.y + 50f, 0.5f));
+        sequence.Join(transform.DOScale(new Vector3(0.3f, 0.3f, 1f), 0.5f));
+        yield return sequence.WaitForCompletion();
+    }
+
+    public IEnumerator PlayBreakOutAnimation() // it's the opposite of the PlayCapturedAnimation
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(image.DOFade(1, 0.5f));
+        sequence.Join(transform.DOLocalMoveY(originalPos.y, 0.5f));
+        sequence.Join(transform.DOScale(new Vector3(1f, 1f, 1f), 0.5f));
+        yield return sequence.WaitForCompletion();
     }
 }

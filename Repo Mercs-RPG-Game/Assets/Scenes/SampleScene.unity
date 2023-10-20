@@ -1195,6 +1195,7 @@ MonoBehaviour:
   partyScreen: {fileID: 1662218628}
   playerImage: {fileID: 976642544}
   trainerImage: {fileID: 632007286}
+  pokeballSprite: {fileID: 3998767717433339970, guid: ad62b4d7cd4fd0d4883bf78b05c11157, type: 3}
 --- !u!1 &607132856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,9 +2290,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -57.99994, y: 66}
+  m_AnchoredPosition: {x: -176, y: 168}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200736560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14865,7 +14866,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1175662781
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1405776421
@@ -25639,9 +25640,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 80, y: -50}
+  m_AnchoredPosition: {x: 160, y: 44}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140637503
 MonoBehaviour:
   m_ObjectHideFlags: 0
