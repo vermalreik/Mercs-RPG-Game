@@ -137,6 +137,17 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         }
     }
 
+    public bool CheckForLevelUp()
+    {
+        if(Exp > Base.GetExpForLevel(level + 1)) // + 1 because it's for the next level
+        {
+            ++level;
+            return true;
+        }
+
+        return false;
+    }
+
     // Properties for each of the stats
     public int Attack
     {

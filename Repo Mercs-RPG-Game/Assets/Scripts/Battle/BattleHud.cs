@@ -27,7 +27,7 @@ public class BattleHud : MonoBehaviour
         _pokemon = pokemon;
 
         nameText.text = pokemon.Base.Name;
-        levelText.text = "Lvl " + pokemon.Level;
+        SetLevel();
         hpBar.SetHP((float)pokemon.HP / pokemon.MaxHp);
         // We need to Normalize the current HP of the Pokemon
         // We can do that by dividing the HP of the Pokemon by the Max HP
@@ -61,6 +61,11 @@ public class BattleHud : MonoBehaviour
         }
     }
 
+    public void SetLevel()
+    {
+        levelText.text = "Lvl " + _pokemon.Level;
+    }
+
     public void SetExp()
     {
         if(expBar == null) return; // This is important because only the Player Hud will have the ExpBar
@@ -69,9 +74,12 @@ public class BattleHud : MonoBehaviour
         expBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
     }
 
-    public IEnumerator SetExpSmooth()
+    public IEnumerator SetExpSmooth(bool reset=false)
     {
         if(expBar == null) yield break; // This is important because only the Player Hud will have the ExpBar
+
+        if(reset)
+            expBar.transform.localScale = new Vector3(0, 1, 1);
 
         float normalizedExp = GetNormalizedExp();
         yield return expBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
