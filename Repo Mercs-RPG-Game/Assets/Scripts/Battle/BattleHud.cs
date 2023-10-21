@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +11,7 @@ public class BattleHud : MonoBehaviour
     [SerializeField] Text levelText;
     [SerializeField] Text statusText;
     [SerializeField] HPBar hpBar;
+    [SerializeField] GameObject expBar;
 
     [SerializeField] Color psnColor;
     [SerializeField] Color brnColor;
@@ -29,6 +32,7 @@ public class BattleHud : MonoBehaviour
         // We need to Normalize the current HP of the Pokemon
         // We can do that by dividing the HP of the Pokemon by the Max HP
         // Make sure to convert it into float, since both HP and MaxHp are integers
+        SetExp();
     
         statusColors = new Dictionary<ConditionID, Color>()
         {
@@ -55,6 +59,33 @@ public class BattleHud : MonoBehaviour
             statusText.text = _pokemon.Status.Id.ToString().ToUpper();
             statusText.color = statusColors[_pokemon.Status.Id];
         }
+    }
+
+    public void SetExp()
+    {
+        if(expBar == null) return; // This is important because only the Player Hud will have the ExpBar
+
+        float normalizedExp = GetNormalizedExp();
+        expBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
+    }
+
+    public IEnumerator SetExpSmooth()
+    {
+        if(expBar == null) yield break; // This is important because only the Player Hud will have the ExpBar
+
+        float normalizedExp = GetNormalizedExp();
+        yield return expBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
+    }
+
+    // Calculate the Normalized Exp of the Pokemon
+    float GetNormalizedExp()
+    {
+        int currLevelExp = _pokemon.Base.GetExpForLevel(_pokemon.Level);
+        int nextLevelExp = _pokemon.Base.GetExpForLevel(_pokemon.Level + 1);
+
+        // Formula to Normalize our current exp
+        float normalizedExp = (float) (_pokemon.Exp - currLevelExp) / (nextLevelExp - currLevelExp);
+        return Mathf.Clamp01(normalizedExp); // "Mathf.Clamp01()" in order to make sure that the normalized Exp is always between 0 and 1
     }
 
     public IEnumerator UpdateHP()

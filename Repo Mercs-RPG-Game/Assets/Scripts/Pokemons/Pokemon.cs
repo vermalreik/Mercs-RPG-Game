@@ -30,6 +30,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         }
      }
 
+    public int Exp { get; set; }
     public int HP { get; set; }
     public List<Move> Moves { get; set; } // Son los moves que tiene un pokemon en concreto
     public Move CurrentMove { get; set; }
@@ -62,6 +63,8 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
                 break; // exit the loop calling break
         }
         // :D hasta aki
+
+        Exp = Base.GetExpForLevel(Level);
 
         CalculateStats();
         HP = MaxHp;

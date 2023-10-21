@@ -24,10 +24,44 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int spAttack;
     [SerializeField] int spDefense;
     [SerializeField] int speed;
+    [SerializeField] int expYield;
+    [SerializeField] GrowRate growRate;
 
     [SerializeField] int catchRate = 255;
 
     [SerializeField] List<LearnableMove> learnableMoves;
+
+    public int GetExpForLevel(int level)
+    {
+        if(growRate == GrowRate.Fast)
+        {
+            return 4 * (level * level * level) / 5;
+        }
+        else if(growRate == GrowRate.MediumFast)
+        {
+            return level * level * level;
+        }
+        else if(growRate == GrowRate.MediumSlow)
+        {
+            return ((6/5)*(level * level * level)) - (15 * (level * level)) + (100 * level) - 140;
+        }
+        else if(growRate == GrowRate.Slow)
+        {
+            return 5 * (level * level * level) / 4;
+        }
+        else if(growRate == GrowRate.Fluctuating)
+        {
+            if(level < 15){
+                return (level * level * level) * (((level+1)/3) + 24) / 50;
+            }else if(level >= 15 && level < 36){
+                return ((level * level * level) * (level + 14)) / 50;
+            }else if(level >= 36 && level <100){
+                return ((level * level * level) * ((level/2) + 32)) / 50;
+            }
+        }
+
+        return -1;
+    }
 
     public string Name
     {
@@ -100,6 +134,10 @@ public class PokemonBase : ScriptableObject
     }
 
     public int CatchRate => catchRate; // short way of create properties, if the Property only needs the getter
+
+    public int ExpYield => expYield;
+    public GrowRate GrowRate => growRate;
+
 }
 
 [System.Serializable] // Serializable so it appears on the Inspector in Unity
@@ -140,6 +178,13 @@ public enum PokemonType
     Dark,
     Steel,
     Fairy
+}
+
+public enum GrowRate
+{
+    // https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_experience_type
+    // https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_effort_value_yield
+    Fast, MediumFast, MediumSlow, Slow, Fluctuating
 }
 
 public enum Stat
