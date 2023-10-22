@@ -59,7 +59,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
             if (move.Level <= Level)
                 Moves.Add(new Move(move.Base)); // Here we create a move :D usamos la clase Move.cs
 
-            if (Moves.Count >= 4)
+            if (Moves.Count >= PokemonBase.MaxNumOfMoves)
                 break; // exit the loop calling break
         }
         // :D hasta aki
@@ -146,6 +146,20 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         }
 
         return false;
+    }
+
+    public LearnableMove GetLearnableMoveAtCurrLevel()
+    {
+        return Base.LearnableMoves.Where(x => x.Level == level).FirstOrDefault();
+        // If the list is empty then "FirstOrDefault()" will return null
+    }
+
+    public void LearnMove(LearnableMove moveToLearn)
+    {
+        if(Moves.Count > PokemonBase.MaxNumOfMoves)
+            return;
+
+        Moves.Add(new Move(moveToLearn.Base));
     }
 
     // Properties for each of the stats
