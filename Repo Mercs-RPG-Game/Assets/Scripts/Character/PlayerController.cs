@@ -10,9 +10,6 @@ public class PlayerController : MonoBehaviour
 
      const float offsetY = 0.3f;
 
-    public event Action OnEncountered; // It's an event :D following the Observer Pattern we will notify whenever th aplayer starts a battle, so the controller passes to the Battle System
-    public event Action<Collider2D> OnEnterTrainersView;
-
     private Vector2 input;
 
    private Character character;
@@ -71,31 +68,19 @@ public class PlayerController : MonoBehaviour
 
     private void OnMoveOver()
     {
-        CheckForEncounters();
-        CheckIfInTrainerView();
-    }
-
-    private void CheckForEncounters()
-    {
-        if (Physics2D.OverlapCircle(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.GrassLayer) != null) 
-        {// "- new Vector3(0, offsetY)" xD so battles don't start when the player is one tile below the grass. Now we'll create the overlap circle at the center of the tile, which is 0.5 :D because the player Tranform Position Y is in 0.8 (offsetY = 0.3)
-            if (UnityEngine.Random.Range(1, 101) <= 10) // owo Escribo UnityEngine porque al importar using. System para usar eventos "Random" queda ambiguo por estar en las dos librerias
+       var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
+        // OverlapCircle will only return the first Game Object with which it overlapped
+        // OverlapCircleAll = returns ALL Game Objects with which it overlapped
+    
+        foreach(var collider in colliders)
+        {
+            var triggerable = collider.GetComponent<IPlayerTriggerable>();
+            if(triggerable != null)
             {
                 character.Animator.IsMoving = false;
-                //Debug.Log("Encountered a wild pokemon");
-                OnEncountered();
+                triggerable.onPlayerTriggered(this);
+                break;
             }
-        }
-    }
-
-    private void CheckIfInTrainerView()
-    {
-        var collider = Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.FovLayer);
-        if (collider != null)
-        {
-            //Debug.Log("In Trainer's view");
-            character.Animator.IsMoving = false;
-            OnEnterTrainersView?.Invoke(collider);
         }
     }
 
