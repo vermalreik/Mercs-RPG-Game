@@ -190,7 +190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 292034457}
   - component: {fileID: 292034456}
-  - component: {fileID: 292034455}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -198,21 +197,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &292034455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292034454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695bd81b10be0344a9a8aaeaa82e3feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wildPokemons:
-  - _base: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
-    level: 7
 --- !u!156049354 &292034456
 Grid:
   m_ObjectHideFlags: 0
@@ -9790,7 +9774,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 58
+      m_TileSpriteIndex: 59
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14160,7 +14144,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 57
+      m_TileSpriteIndex: 58
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15127,12 +15111,12 @@ Tilemap:
     m_Data: {fileID: 2500841829298268675, guid: 01413b1dd4bed394ebc8db105ce237dd, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -3810115532551672673, guid: 01413b1dd4bed394ebc8db105ce237dd, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 767245049849254925, guid: 6dc559b2458f5bb40990e71b61047d08, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 3804227228179273323, guid: 01413b1dd4bed394ebc8db105ce237dd, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 1311742698979968589, guid: a44ef5bfb5fc3234688a0848fefcbc69, type: 3}
   - m_RefCount: 1
