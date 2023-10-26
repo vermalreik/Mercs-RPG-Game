@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,4 +17,28 @@ public class Move // Its plain C# class
         Base = pBase;
         PP = pBase.PP;
     }
+
+    public Move(MoveSaveData saveData)
+    {
+        Base = MoveDB.GetMoveByName(saveData.name);
+        PP = saveData.pp;
+    }
+
+    public MoveSaveData GetSaveData()
+    {
+        var saveData = new MoveSaveData()
+        {
+            name = Base.Name, // If you write 'name' instead of 'Name' there will be an Error at Runtime, because it will take the name of the Scriptable Object
+            pp = PP
+        };
+        return saveData;
+    }
+}
+
+[Serializable]
+public class MoveSaveData
+{
+    public string name;
+    public int pp;
+
 }

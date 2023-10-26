@@ -1,6 +1,8 @@
 //using System;
+//using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using UnityEngine;
 
@@ -52,7 +54,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
 
     public void Init() // Init stands for Initialization
     {
-        // This code will generate de moves of pokemons based on its level
+        // Generate Moves of pokemons based on its level
         Moves = new List<Move>();
         foreach (var move in Base.LearnableMoves)
         {
@@ -73,6 +75,43 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         ResetStatBoost();
         Status = null;
         VolatileStatus = null;
+    }
+
+    public Pokemon(PokemonSaveData saveData)
+    {
+        _base = PokemonDB.GetPokemonByName(saveData.name);
+        HP = saveData.hp;
+        level = saveData.level;
+        Exp = saveData.exp;
+
+        if(saveData.statusId != null)
+            Status = ConditionsDB.Conditions[saveData.statusId.Value];
+        else
+            Status = null;
+
+        // Restore moves
+        Moves = saveData.moves.Select(s => new Move(s)).ToList();
+
+        CalculateStats();
+        StatusChanges = new Queue<string>();
+        ResetStatBoost();
+        Status = null;
+        VolatileStatus = null;
+    }
+
+    public PokemonSaveData GetSaveData()
+    {
+        var saveData = new PokemonSaveData()
+        {
+            name = Base.Name,
+            hp = HP,
+            level = Level,
+            exp = Exp,
+            statusId = Status?.Id,
+            moves = Moves.Select(m => m.GetSaveData()).ToList()
+        };
+
+        return saveData;
     }
 
     void CalculateStats()
@@ -307,4 +346,15 @@ public class DamageDetails
     public bool Fainted { get; set; }
     public float Critical { get; set; }
     public float TypeEffectiveveness { get; set; }
+}
+
+[System.Serializable]
+public class PokemonSaveData
+{
+    public string name; // We use the name as an ID to identify the PokemonBase
+    public int hp;
+    public int level;
+    public int exp;
+    public ConditionID? statusId;
+    public List<MoveSaveData> moves;
 }

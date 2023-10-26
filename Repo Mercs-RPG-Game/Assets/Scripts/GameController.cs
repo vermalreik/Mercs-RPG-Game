@@ -22,6 +22,9 @@ public class GameController : MonoBehaviour
     private void  Awake()
     {
         Instance = this;
+
+        PokemonDB.Init();
+        MoveDB.Init();
         ConditionsDB.Init();
     }
 
@@ -105,6 +108,15 @@ public class GameController : MonoBehaviour
         if(state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
+
+            if(Input.GetKeyDown(KeyCode.G))
+            {
+                SavingSystem.i.Save("saveSlot01");
+            }
+            if(Input.GetKeyDown(KeyCode.L))
+            {
+                SavingSystem.i.Load("saveSlot01");
+            }
         }
         else if(state == GameState.Battle)
         {
@@ -113,7 +125,7 @@ public class GameController : MonoBehaviour
         else if(state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
-        }
+        } 
     }
 
     public void SetCurrentScene(SceneDetails currScene)
