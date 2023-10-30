@@ -15,4 +15,9 @@ public class ItemBase : ScriptableObject
     public string Name => name;
     public string Descrption => description;
     public Sprite Icon => icon; 
+
+    public virtual bool Use(Pokemon pokemon)
+    {
+        return false;
+    }
 }

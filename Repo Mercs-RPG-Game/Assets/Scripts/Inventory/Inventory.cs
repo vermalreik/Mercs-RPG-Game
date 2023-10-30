@@ -1,13 +1,39 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
     [SerializeField] List<ItemSlot> slots;
 
+    public event Action OnUpdated;
+
     public List<ItemSlot> Slots => slots;
+
+    public ItemBase UseItem(int itemIndex, Pokemon selectedPokemon)
+    {
+        var item = slots[itemIndex].Item;
+        bool itemUsed = item.Use(selectedPokemon);
+        if(itemUsed)
+        {
+            RemoveItem(item);
+            return item; // return the item so we can use it in the dialog
+        }
+
+        return null; // indicates that the item is not used
+    }
+
+    public void RemoveItem(ItemBase item)
+    {
+        var itemSlot = slots.First(slot => slot.Item == item);
+        itemSlot.Count--;
+        if(itemSlot.Count == 0)
+            slots.Remove(itemSlot);
+
+        OnUpdated?.Invoke();
+    }
 
     public static Inventory GetInventory()
     {
@@ -23,5 +49,8 @@ public class ItemSlot
     [SerializeField] int count;
 
     public ItemBase Item => item;
-    public int Count => count;
+    public int Count{
+        get => count;
+        set => count = value;
+    }
 }

@@ -38,6 +38,8 @@ public class InventoryUI : MonoBehaviour
     private void Start()
     {
         UpdateItemList();
+
+        inventory.OnUpdated += UpdateItemList;
     }
 
     void UpdateItemList()
@@ -87,7 +89,7 @@ public class InventoryUI : MonoBehaviour
         {
             Action onSelected = () =>
             {
-                // Use item on the selected pokemon
+                StartCoroutine(UseItem());
             };
             Action onBackPartyScreen = () =>
             {
@@ -95,6 +97,23 @@ public class InventoryUI : MonoBehaviour
             };
             partyScreen.HandleUpdate(onSelected, onBackPartyScreen);
         }
+    }
+
+    IEnumerator UseItem()
+    {
+        state = InventoryUIState.Busy;
+
+        var usedItem = inventory.UseItem(selectedItem, partyScreen.SelectedMember);
+        if(usedItem != null)
+        {
+            yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.Name}"); // you can add a new field on ItemBase.cs for customized messages
+        }
+        else
+        {
+            yield return DialogManager.Instance.ShowDialogText($"It won't have any effect!");
+        }
+
+        ClosePartyScreen();
     }
 
     void UpdateItemSelection()
@@ -117,7 +136,7 @@ public class InventoryUI : MonoBehaviour
     void HandleScrolling()
     {
         if(slotUIList.Count <= itemsInViewport) return;
-        
+
         float scrollPos = Mathf.Clamp(selectedItem - itemsInViewport/2, 0, selectedItem) * slotUIList[0].Height; // Get the scroll position (multiply it by the slot's height, 50 in this case)
         itemListRect.localPosition = new Vector2(itemListRect.localPosition.x, scrollPos);
     

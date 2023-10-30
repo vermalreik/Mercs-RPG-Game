@@ -31,6 +31,21 @@ public class DialogManager : MonoBehaviour
 
     public bool IsShowing{ get; private set; } 
 
+    public IEnumerator ShowDialogText(string text, bool waitForInput=true)
+    {
+        IsShowing = true;
+        dialogBox.SetActive(true);
+
+        yield return TypeDialog(text);
+        if(waitForInput)
+        {
+            yield return new WaitUntil( () => Input.GetKeyDown(KeyCode.E));
+        }
+
+        dialogBox.SetActive(false);
+        IsShowing = false;
+    }
+
     public IEnumerator ShowDialog(Dialog dialog, Action onFinished=null)
     {
         // wait for the frame to end before we start the dialogue will help us avoid lots of problems

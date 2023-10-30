@@ -51,6 +51,7 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
     // Using a queue, the first messages that we add to the queue should be shown first in our dialogue box
     public bool HpChanged { get; set; }
     public event System.Action OnStatusChanged;
+    public event System.Action OnHPChanged; // Observer Pattern
 
     public void Init() // Init stands for Initialization
     {
@@ -254,15 +255,23 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        UpdateHP(damage);
+        DecreaseHP(damage);
 
         return damageDetails;;
 
     }
 
-    public void UpdateHP(int damage)
+    public void IncreaseHP(int amount)
+    {
+        HP = Mathf.Clamp(HP + amount, 0, MaxHp);
+        OnHPChanged?.Invoke();
+        HpChanged = true;
+    }
+
+    public void DecreaseHP(int damage)
     {
         HP = Mathf.Clamp(HP - damage, 0, MaxHp);
+        OnHPChanged?.Invoke();
         HpChanged = true;
     }
 
