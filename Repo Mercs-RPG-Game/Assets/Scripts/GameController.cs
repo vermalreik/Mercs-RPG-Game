@@ -30,6 +30,10 @@ public class GameController : MonoBehaviour
 
         menuController = GetComponent<MenuController>();
 
+        // Disable mouse
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+
         PokemonDB.Init();
         MoveDB.Init();
         ConditionsDB.Init();
