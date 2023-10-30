@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq; // :D lo puedes importar rapidamente usando "CTRL" + "." sobre "where"
@@ -9,6 +10,8 @@ public class PokemonParty : MonoBehaviour
     // if the list is not visible in the Inspector even if we made it [SerializeField]
     // You have to do add [System.Serializable] on top of Pokemon.cs class, so it will be shown in the inspector
     // it's because in class Pokemon, the variables: "PokemonBase" and "Level" are not Serialize Fields
+
+    public event Action onUpdated;
 
     public List<Pokemon> Pokemons{
         get{
@@ -37,11 +40,17 @@ public class PokemonParty : MonoBehaviour
         if(pokemons.Count < 6)
         {
             pokemons.Add(newPokemon);
+            onUpdated?.Invoke();
         }
         else
         {
             // TODO: Add to the PC once that's implemented
         }
+    }
+
+    public static PokemonParty GetPlayerParty()
+    {
+        return FindObjectOfType<PlayerController>().GetComponent<PokemonParty>();
     }
 
 }

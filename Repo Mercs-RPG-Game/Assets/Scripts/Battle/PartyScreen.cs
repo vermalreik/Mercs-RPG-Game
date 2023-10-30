@@ -10,6 +10,7 @@ public class PartyScreen : MonoBehaviour
 
     PartyMemberUI[] memberSlots;
     List<Pokemon> pokemons;
+    PokemonParty party;
 
     int selection = 0;
 
@@ -27,11 +28,16 @@ public class PartyScreen : MonoBehaviour
         // it retuns an array, not a list
         // "GetComponentsInChildren" will only return the one that is currently active
         // GetComponentsInChildren<>(true), will also return inactive or disabled member slots
+    
+        party = PokemonParty.GetPlayerParty();
+        SetPartyData();
+
+        party.onUpdated += SetPartyData;
     }
 
-    public void SetPartyData(List<Pokemon> pokemons)
+    public void SetPartyData()
     {
-        this.pokemons = pokemons;
+        pokemons = party.Pokemons;
 
         for(int i = 0; i < memberSlots.Length; i++)
         {
