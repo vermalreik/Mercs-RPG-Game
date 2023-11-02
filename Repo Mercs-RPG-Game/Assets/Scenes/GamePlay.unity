@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildPokemons:
   - _base: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
-    level: 7
+    level: 10
 --- !u!224 &1209943851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 579143021417083813, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}

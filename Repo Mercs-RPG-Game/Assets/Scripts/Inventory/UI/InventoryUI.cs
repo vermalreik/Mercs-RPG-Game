@@ -19,6 +19,8 @@ public class InventoryUI : MonoBehaviour
 
     [SerializeField] PartyScreen partyScreen;
 
+    Action onItemUsed;
+
     int selectedItem = 0;
     InventoryUIState state;
 
@@ -60,8 +62,10 @@ public class InventoryUI : MonoBehaviour
         UpdateItemSelection();
     }
 
-    public void HandleUpdate(Action onBack)
+    public void HandleUpdate(Action onBack, Action onItemUsed=null)
     {
+        this.onItemUsed = onItemUsed;
+
         if(state == InventoryUIState.ItemSelection)
         {
             int prevSelection = selectedItem;
@@ -107,6 +111,7 @@ public class InventoryUI : MonoBehaviour
         if(usedItem != null)
         {
             yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.Name}"); // you can add a new field on ItemBase.cs for customized messages
+            onItemUsed?.Invoke();
         }
         else
         {
