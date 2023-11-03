@@ -131,6 +131,9 @@ public class InventoryUI : MonoBehaviour
                 slotUIList[i].NameText.color = Color.black;
         }
 
+        // Clamp selectedItem so in case an item was remove we won't get the index out of range Exception
+        selectedItem = Mathf.Clamp(selectedItem, 0, inventory.Slots.Count -1);
+
         var item = inventory.Slots[selectedItem].Item;
         itemIcon.sprite = item.Icon;
         itemDescription.text = item.Descrption;

@@ -33,6 +33,11 @@ public class Move // Its plain C# class
         };
         return saveData;
     }
+
+    public void IncreasePP(int amount)
+    {
+        PP = Mathf.Clamp(PP + amount, 0, Base.PP);
+    }
 }
 
 [Serializable]
