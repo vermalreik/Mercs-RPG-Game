@@ -11,6 +11,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] GameObject itemList;
     [SerializeField] ItemSlotUI itemSlotUI;
 
+    [SerializeField] Text categoryText;
     [SerializeField] Image itemIcon;
     [SerializeField] Text itemDescription;
 
@@ -22,6 +23,7 @@ public class InventoryUI : MonoBehaviour
     Action onItemUsed;
 
     int selectedItem = 0;
+    int selectedCategory = 0;
     InventoryUIState state;
 
     const int itemsInViewport = 8;
@@ -51,7 +53,7 @@ public class InventoryUI : MonoBehaviour
             Destroy(child.gameObject); // This is how you Destroy all the children of a Game Object in Unity
     
         slotUIList = new List<ItemSlotUI>();
-        foreach(var itemSlot in inventory.Slots)
+        foreach(var itemSlot in inventory.GetSlotsByCategory(selectedCategory))
         {
             var slotUIObj = Instantiate(itemSlotUI, itemList.transform); // Instantiate the prefab and Add it as a child of itemList Object
             slotUIObj.setData(itemSlot);
@@ -69,16 +71,38 @@ public class InventoryUI : MonoBehaviour
         if(state == InventoryUIState.ItemSelection)
         {
             int prevSelection = selectedItem;
+            int prevCategory = selectedCategory;
 
             if(Input.GetKeyDown(KeyCode.DownArrow))
                 ++selectedItem;
-            if(Input.GetKeyDown(KeyCode.UpArrow))
+            else if(Input.GetKeyDown(KeyCode.UpArrow))
                 --selectedItem;
+            else if(Input.GetKeyDown(KeyCode.RightArrow))
+                ++selectedCategory;
+            else if(Input.GetKeyDown(KeyCode.LeftArrow))
+                --selectedCategory;
 
-            selectedItem = Mathf.Clamp(selectedItem, 0 , inventory.Slots.Count - 1);
+            // clamping (you can not go beyond right or left when you reach the end) or rotating selection. Do it with Category before clamping hte items
+            // selectedCategory = Mathf.Clamp(selectedCategory, 0, Inventory.ItemCategories.Count - 1); //Clamping // we have 3 category of items on our inventory
+            // Rotating Selection
+            if(selectedCategory > Inventory.ItemCategories.Count - 1)
+                selectedCategory = 0;
+            else if(selectedCategory < 0)
+                selectedCategory = Inventory.ItemCategories.Count - 1;
+            
+            //Clamping Selection
+            selectedItem = Mathf.Clamp(selectedItem, 0 , inventory.GetSlotsByCategory(selectedCategory).Count - 1);
 
-            if(prevSelection != selectedItem)
-                UpdateItemSelection();
+            if(prevCategory != selectedCategory)
+            {
+                ResetSelection();
+                categoryText.text = Inventory.ItemCategories[selectedCategory];
+                UpdateItemList();
+            }
+            else if(prevSelection != selectedItem)
+            {
+                 UpdateItemSelection();
+            }
 
             if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Z))
             {
@@ -123,6 +147,8 @@ public class InventoryUI : MonoBehaviour
 
     void UpdateItemSelection()
     {
+        var slots = inventory.GetSlotsByCategory(selectedCategory);
+
         for (int i = 0; i < slotUIList.Count; i++)
         {
             if(i == selectedItem)
@@ -132,11 +158,14 @@ public class InventoryUI : MonoBehaviour
         }
 
         // Clamp selectedItem so in case an item was remove we won't get the index out of range Exception
-        selectedItem = Mathf.Clamp(selectedItem, 0, inventory.Slots.Count -1);
+        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count -1);
 
-        var item = inventory.Slots[selectedItem].Item;
-        itemIcon.sprite = item.Icon;
-        itemDescription.text = item.Descrption;
+        if(slots.Count > 0)
+        {
+            var item = slots[selectedItem].Item;
+            itemIcon.sprite = item.Icon;
+            itemDescription.text = item.Descrption;
+        }
 
         HandleScrolling();
     }
@@ -152,6 +181,17 @@ public class InventoryUI : MonoBehaviour
         upArrow.gameObject.SetActive(showUpArrow);
         bool showDownArrow = selectedItem + itemsInViewport/2 < slotUIList.Count; // if it's true, there are more items below that can be scrolled
         downArrow.gameObject.SetActive(showDownArrow);
+    }
+
+    void ResetSelection()
+    {
+        selectedItem = 0;
+
+        upArrow.gameObject.SetActive(false);
+        downArrow.gameObject.SetActive(false);
+
+        itemIcon.sprite = null;
+        itemDescription.text = "";
     }
 
     void OpenPartyScreen()

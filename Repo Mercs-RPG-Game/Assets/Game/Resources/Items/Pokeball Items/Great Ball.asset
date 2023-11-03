@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fee4c0a339ddc40b2ef2c5d4a8f82b, type: 3}
+  m_Name: Great Ball
+  m_EditorClassIdentifier: 
+  name: Great Ball
+  description: "A good, quality Ball that offers a higher Pok\xE9mon catch rate than
+    a standard Pok\xE9 Ball."
+  icon: {fileID: 2993369247530935505, guid: bd70c0e5de0cd274eac1c823b059088a, type: 3}
