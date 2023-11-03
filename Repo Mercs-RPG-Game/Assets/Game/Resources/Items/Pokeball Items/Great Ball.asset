@@ -16,3 +16,4 @@ MonoBehaviour:
   description: "A good, quality Ball that offers a higher Pok\xE9mon catch rate than
     a standard Pok\xE9 Ball."
   icon: {fileID: 2993369247530935505, guid: bd70c0e5de0cd274eac1c823b059088a, type: 3}
+  catchRateModifier: 1.5

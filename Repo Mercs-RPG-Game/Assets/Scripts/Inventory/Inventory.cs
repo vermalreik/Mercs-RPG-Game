@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum ItemCategory { Items, Pokeballs, Tms } // Write it in the same order in whish you have it in the list
+
 public class Inventory : MonoBehaviour
 {
     [SerializeField] List<ItemSlot> slots;
