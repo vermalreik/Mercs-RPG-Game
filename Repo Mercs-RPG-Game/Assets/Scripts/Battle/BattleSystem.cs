@@ -122,6 +122,8 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.BattleOver;  
         playerParty.Pokemons.ForEach(p => p.OnBattleOver()); // call  OnBattleOver of all the pokemons
+        playerUnit.Hud.ClearData();
+        enemyUnit.Hud.ClearData();
         OnBattleOver(won); // It's an event that Notifies the Game Controller that the battle is over
     }
 

@@ -23,7 +23,7 @@ public class PartyMemberUI : MonoBehaviour
     {
         nameText.text = _pokemon.Base.Name;
         levelText.text = "Lvl " + _pokemon.Level;
-        hpBar.SetHP((float)_pokemon.HP / _pokemon.MaxHp);
+        hpBar.SetHP((float)_pokemon.HP / _pokemon.MaxHp); // If you try to divide 0/0 you get a NaN. You can't divide anything by 0
     }
 
     public void SetSelected(bool selected)

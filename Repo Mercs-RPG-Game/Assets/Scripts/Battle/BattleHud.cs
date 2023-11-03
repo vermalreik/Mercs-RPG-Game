@@ -117,4 +117,13 @@ public class BattleHud : MonoBehaviour
     {
         yield return new WaitUntil(() => hpBar.IsUpdating == false);
     }
+
+    public void ClearData()
+    {
+        if(_pokemon != null)
+        {
+            _pokemon.OnHPChanged -= UpdateHP; // unsuscribe
+            _pokemon.OnStatusChanged -= SetStatusText;
+        }
+    }
 }
