@@ -193,12 +193,17 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         // If the list is empty then "FirstOrDefault()" will return null
     }
 
-    public void LearnMove(LearnableMove moveToLearn)
+    public void LearnMove(MoveBase moveToLearn)
     {
         if(Moves.Count > PokemonBase.MaxNumOfMoves)
             return;
 
-        Moves.Add(new Move(moveToLearn.Base));
+        Moves.Add(new Move(moveToLearn));
+    }
+
+    public bool HasMove(MoveBase moveToCheck)
+    {
+        return Moves.Count(m => m.Base == moveToCheck) > 0;
     }
 
     // Properties for each of the stats
