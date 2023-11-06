@@ -6,6 +6,9 @@ using UnityEngine;
 public class TmItem : ItemBase
 {
     [SerializeField] MoveBase move;
+    [SerializeField] bool isHM;
+
+    public override string Name => base.Name + $": {move.Name}"; // "base.Name  will give you the value of the Name property int the parent
 
     public override bool Use(Pokemon pokemon)
     {
@@ -13,5 +16,15 @@ public class TmItem : ItemBase
         return pokemon.HasMove(move);
     }
 
+    public bool CanBeTaught(Pokemon pokemon)
+    {
+        return pokemon.Base.LearnableByItems.Contains(move);
+    }
+
+    public override bool isReusable => isHM;
+
+    public override bool CanUseInBattle => false;
+
     public MoveBase Move => move;
+    public bool IsHM => isHM;
 }
