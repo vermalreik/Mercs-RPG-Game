@@ -12773,6 +12773,7 @@ GameObject:
   - component: {fileID: 1850365299}
   - component: {fileID: 1850365298}
   - component: {fileID: 1850365297}
+  - component: {fileID: 1850365304}
   m_Layer: 8
   m_Name: FatMan
   m_TagString: Untagged
@@ -12957,6 +12958,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850365304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850365296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045e4460fb25a6644b3a40544f035451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: a370ea6b2f2b34f498b05d756e7a82a6, type: 2}
+  count: 5
+  dialog:
+    lines:
+    - I bought some pokeballs from the mart next town
+    - You can have some :D
 --- !u!1 &2078796144
 GameObject:
   m_ObjectHideFlags: 0
