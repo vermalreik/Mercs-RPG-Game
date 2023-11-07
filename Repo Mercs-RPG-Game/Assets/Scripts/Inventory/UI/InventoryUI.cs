@@ -188,14 +188,14 @@ public class InventoryUI : MonoBehaviour
         var usedItem = inventory.UseItem(selectedItem, partyScreen.SelectedMember, selectedCategory);
         if(usedItem != null)
         {
-            if(usedItem is RecoveryItems)
+            if(usedItem is RecoveryItem)
                 yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.Name}"); // you can add a new field on ItemBase.cs for customized messages
             
             onItemUsed?.Invoke(usedItem);
         }
         else
         {
-            if(usedItem is RecoveryItems)
+            if(selectedCategory == (int)ItemCategory.Items)
                 yield return DialogManager.Instance.ShowDialogText($"It won't have any effect!");
         }
 

@@ -18,7 +18,7 @@ public class NPCController : MonoBehaviour, Interactable
         character = GetComponent<Character>();
     }
 
-    public void Interact(Transform initiator)
+    public IEnumerator Interact(Transform initiator)
     {
         //Debug.Log("Interacting with NPC");
         // xD test NPC walks away when player interacts with it
@@ -29,10 +29,10 @@ public class NPCController : MonoBehaviour, Interactable
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
 
-            StartCoroutine(DialogManager.Instance.ShowDialog(dialog, () =>{
-                idleTimer = 0f;
-                state = NPCState.Idle;
-            }));
+            yield return DialogManager.Instance.ShowDialog(dialog);
+
+            idleTimer = 0f;
+            state = NPCState.Idle;
         }
     }
 

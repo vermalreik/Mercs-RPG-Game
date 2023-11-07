@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/Create new recovery item")]
-public class RecoveryItems : ItemBase
+public class RecoveryItem : ItemBase
 {
     [Header("HP")]
     [SerializeField] int hpAmount;

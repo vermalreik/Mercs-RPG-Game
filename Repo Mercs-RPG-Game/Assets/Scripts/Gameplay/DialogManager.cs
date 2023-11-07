@@ -24,15 +24,11 @@ public class DialogManager : MonoBehaviour
     // be careful when you use it because it's very easy to access the Instance of DialogManager
     // and to create unwanted dependencies to it from different classes
 
-    Dialog dialog;
-    Action onDialogFinished;
-    int currentLine = 0;
-    bool isTyping;
-
     public bool IsShowing{ get; private set; } 
 
     public IEnumerator ShowDialogText(string text, bool waitForInput=true, bool autoClose=true)
     {
+        OnShowDialog?.Invoke();
         IsShowing = true;
         dialogBox.SetActive(true);
 
@@ -52,54 +48,42 @@ public class DialogManager : MonoBehaviour
     {
         dialogBox.SetActive(false);
         IsShowing = false;
+        OnCloseDialog?.Invoke();
     }
 
-    public IEnumerator ShowDialog(Dialog dialog, Action onFinished=null)
+    public IEnumerator ShowDialog(Dialog dialog)
     {
         // wait for the frame to end before we start the dialogue will help us avoid lots of problems
         yield return new WaitForEndOfFrame();
 
         OnShowDialog?.Invoke();
-
         IsShowing = true;
-        this.dialog = dialog;
-        onDialogFinished = onFinished;
-
         dialogBox.SetActive(true);
-        //dialogText.text = dialog.Lines[0];
-        StartCoroutine(TypeDialog(dialog.Lines[0]));
+        
+        foreach (var line in dialog.Lines)
+        {
+            yield return TypeDialog(line);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        }
+
+        dialogBox.SetActive(false);
+        IsShowing = false;
+        OnCloseDialog?.Invoke();
     }
 
     public void HandleUpdate()
     {
-        if( ((Input.GetKeyDown(KeyCode.Z)) || (Input.GetKeyDown(KeyCode.E))) && !isTyping)
-        {
-            ++currentLine;
-            if(currentLine < dialog.Lines.Count)
-            {
-                StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
-            }
-            else
-            {
-                currentLine = 0;
-                IsShowing = false;
-                dialogBox.SetActive(false);
-                onDialogFinished?.Invoke();
-                OnCloseDialog?.Invoke();
-            }
-        }
+        //
     }
 
     // Escribe el texto letra a letra :D
     public IEnumerator TypeDialog(string line)
     {
-        isTyping = true;
         dialogText.text = "";
         foreach (var letter in line.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
-        isTyping = false;
     }
 }

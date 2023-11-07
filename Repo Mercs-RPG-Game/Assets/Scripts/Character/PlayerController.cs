@@ -46,10 +46,10 @@ public class PlayerController : MonoBehaviour, ISavable
         character.HandleUpdate();
 
         if(Input.GetKeyDown(KeyCode.Z) | Input.GetKeyDown(KeyCode.E))
-            Interact();
+            StartCoroutine(Interact());
     }
 
-    void Interact()
+    IEnumerator Interact()
     {
         // first I find the direction in which the player is facing
         var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour, ISavable
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.InteractableLayer);
         if(collider != null)
         {
-            collider.GetComponent<Interactable>()?.Interact(transform);
+            yield return collider.GetComponent<Interactable>()?.Interact(transform);
             // ? Null coalescing operator
         }
     }
