@@ -23,6 +23,8 @@ public class LocationPortal : MonoBehaviour, IPlayerTriggerable
         StartCoroutine(Teleport());
     }
 
+    public bool TriggerRepeatedly => false;
+
     Fader fader;
     private void Start() {
         fader = FindObjectOfType<Fader>();
