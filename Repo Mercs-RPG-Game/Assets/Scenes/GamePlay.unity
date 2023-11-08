@@ -687,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: pokeballSlots.Array.size
@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: slots.Array.data[6].item
       value: 
-      objectReference: {fileID: 11400000, guid: aa7c1228a55af9644a305c87cd4693b9, type: 2}
+      objectReference: {fileID: 11400000, guid: d6098c9b8781fa84bbdeb3d47238cc1b, type: 2}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: slots.Array.data[7].item
       value: 
@@ -770,6 +770,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 27518861827e9814a8b0c52508223e65, type: 2}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: tmSlots.Array.data[3].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 933d85d168446bd4cb3a2523ab56519e, type: 2}
+    - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[0].count
       value: 1
       objectReference: {fileID: 0}
@@ -779,6 +783,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[2].count
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: tmSlots.Array.data[3].count
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}

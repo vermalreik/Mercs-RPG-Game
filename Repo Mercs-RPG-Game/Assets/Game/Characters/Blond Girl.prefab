@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8980173600511096421}
   - component: {fileID: 8980173600511096422}
   - component: {fileID: 8349272752449325082}
+  - component: {fileID: 5569434177422887684}
   m_Layer: 8
   m_Name: Blond Girl
   m_TagString: Untagged
@@ -216,5 +217,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  count: 0
   dialog:
     lines: []
+--- !u!114 &5569434177422887684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980173600511096428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4881f89f8b930e34489bbb86116ccd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueId: 
