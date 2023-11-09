@@ -207,6 +207,7 @@ MonoBehaviour:
     lines:
     - He viajado a esta dimension buscando pokeballs
     - Sabes donde puedo conseguir alguna?
+  questToStart: {fileID: 0}
   movementPattern:
   - {x: 0, y: 2}
   - {x: 2, y: 0}
@@ -12915,6 +12916,7 @@ MonoBehaviour:
   dialog:
     lines:
     - :D Me gustan los donuts!
+  questToStart: {fileID: 0}
   movementPattern:
   - {x: 4, y: 0}
   - {x: -4, y: 0}
@@ -21864,6 +21866,10 @@ PrefabInstance:
       propertyPath: uniqueId
       value: 14d40b36-1d04-4e32-95c8-f8dff6d0ac31
       objectReference: {fileID: 0}
+    - target: {fileID: 8980173600511096423, guid: 84c6f876510b37d4ea1cb9bf331fde67, type: 3}
+      propertyPath: questToStart
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a20a8a0e64d7ef46983f58a694f0d25, type: 2}
     - target: {fileID: 8980173600511096426, guid: 84c6f876510b37d4ea1cb9bf331fde67, type: 3}
       propertyPath: m_RootOrder
       value: 4
