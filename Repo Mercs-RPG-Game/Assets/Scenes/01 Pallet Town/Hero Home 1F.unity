@@ -1731,6 +1731,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 914551071548254314, guid: d09c5914b187d8b4598fbf93f41629bc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 914551071548254315, guid: d09c5914b187d8b4598fbf93f41629bc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2534,7 +2538,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1711673402}
   - component: {fileID: 1711673401}
-  - component: {fileID: 1711673400}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -2542,21 +2545,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1711673400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711673399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695bd81b10be0344a9a8aaeaa82e3feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wildPokemons:
-  - _base: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
-    level: 7
 --- !u!156049354 &1711673401
 Grid:
   m_ObjectHideFlags: 0

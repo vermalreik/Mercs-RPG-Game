@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Viridian City.unity
     guid: e277d0d418894344bbc3fe18e66a4abe
+  - enabled: 1
+    path: Assets/Scenes/01 Pallet Town/Oaks Lab.unity
+    guid: d4de60cecaa2b164abd30b475de28714
   m_configObjects: {}
