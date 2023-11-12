@@ -20,7 +20,7 @@ public class Move // Its plain C# class
 
     public Move(MoveSaveData saveData)
     {
-        Base = MoveDB.GetMoveByName(saveData.name);
+        Base = MoveDB.GetObjectByName(saveData.name);
         PP = saveData.pp;
     }
 
@@ -28,7 +28,7 @@ public class Move // Its plain C# class
     {
         var saveData = new MoveSaveData()
         {
-            name = Base.Name, // If you write 'name' instead of 'Name' there will be an Error at Runtime, because it will take the name of the Scriptable Object
+            name = Base.name, // If you write 'name' instead of 'Name' there will be an Error at Runtime, because it will take the name of the Scriptable Object
             pp = PP
         };
         return saveData;
