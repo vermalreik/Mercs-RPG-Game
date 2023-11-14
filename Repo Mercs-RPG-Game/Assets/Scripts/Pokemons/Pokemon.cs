@@ -206,6 +206,17 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         return Moves.Count(m => m.Base == moveToCheck) > 0;
     }
 
+    public Evolution CheckForEvolution()
+    {
+        return Base.Evolutions.FirstOrDefault(e => e.RequiredLevel == level);
+    }
+
+    public void Evolve(Evolution evolution)
+    {
+        _base = evolution.EvolvesInto;
+        CalculateStats();
+    }
+
     // Properties for each of the stats
     public int Attack
     {

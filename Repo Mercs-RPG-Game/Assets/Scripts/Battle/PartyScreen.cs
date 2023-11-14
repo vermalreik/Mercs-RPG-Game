@@ -32,7 +32,7 @@ public class PartyScreen : MonoBehaviour
         party = PokemonParty.GetPlayerParty();
         SetPartyData();
 
-        party.onUpdated += SetPartyData;
+        party.OnUpdated += SetPartyData;
     }
 
     public void SetPartyData()

@@ -11,7 +11,7 @@ public class PokemonParty : MonoBehaviour
     // You have to do add [System.Serializable] on top of Pokemon.cs class, so it will be shown in the inspector
     // it's because in class Pokemon, the variables: "PokemonBase" and "Level" are not Serialize Fields
 
-    public event Action onUpdated;
+    public event Action OnUpdated;
 
     public List<Pokemon> Pokemons{
         get{
@@ -19,7 +19,7 @@ public class PokemonParty : MonoBehaviour
         }
         set{
             pokemons = value;
-            onUpdated?.Invoke();
+            OnUpdated?.Invoke();
         }
     }
     
@@ -41,12 +41,27 @@ public class PokemonParty : MonoBehaviour
         if(pokemons.Count < 6)
         {
             pokemons.Add(newPokemon);
-            onUpdated?.Invoke();
+            OnUpdated?.Invoke();
         }
         else
         {
             // TODO: Add to the PC once that's implemented
         }
+    }
+
+    public IEnumerator CheckForEvolutions()
+    {
+        foreach(var pokemon in pokemons)
+        {
+            var evolution = pokemon.CheckForEvolution();
+            if(evolution != null)
+            {
+                yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} evolved into {evolution.EvolvesInto.Name}");
+                pokemon.Evolve(evolution);
+            }
+        }
+
+        OnUpdated?.Invoke();
     }
 
     public static PokemonParty GetPlayerParty()

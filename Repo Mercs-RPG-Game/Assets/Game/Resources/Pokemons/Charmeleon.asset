@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb423e6fd690b574b96c7cf26d604a87, type: 3}
-  m_Name: Charmander
+  m_Name: Charmeleon
   m_EditorClassIdentifier: 
-  name: Charmander
+  name: Charmeleon
   description: A flame burns on the tip of its tail from birth. It is said that a
     Charmander dies if its flame ever goes out.
-  frontSprite: {fileID: 21300000, guid: 85c43a33bb66f374fafa3b551f66c14b, type: 3}
-  backSprite: {fileID: 21300000, guid: 3ed5533186c6143428386d277b976969, type: 3}
+  frontSprite: {fileID: 21300000, guid: 875905b179008fc42bed688ae8c9be60, type: 3}
+  backSprite: {fileID: 21300000, guid: ff54292432de7274da27b8f99ee01432, type: 3}
   iconSprites: []
   type1: 2
   type2: 0
-  maxHp: 39
-  attack: 52
-  defense: 43
-  spAttack: 60
-  spDefense: 50
-  speed: 65
-  expYield: 65
+  maxHp: 60
+  attack: 72
+  defense: 63
+  spAttack: 80
+  spDefense: 70
+  speed: 85
+  expYield: 80
   growRate: 2
   catchRate: 255
   learnableMoves:
@@ -43,6 +43,4 @@ MonoBehaviour:
   learnableByItems:
   - {fileID: 11400000, guid: 491280781374d3d4092323b733f9e81c, type: 2}
   - {fileID: 11400000, guid: f5a42bacbcdbc0546b4551bd2c79db06, type: 2}
-  evolutions:
-  - evolvesInto: {fileID: 11400000, guid: d5c3a505ab5312e45b7d109ec41e83f1, type: 2}
-    requiredLevel: 16
+  evolutions: []
