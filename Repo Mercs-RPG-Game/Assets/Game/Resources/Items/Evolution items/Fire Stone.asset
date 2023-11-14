@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907cadadeb9fb5b4d9226eed06b49820, type: 3}
   m_Name: Fire Stone
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  icon: {fileID: 0}
+  name: Fire Stone
+  description: Used to evolve certain fire pokemons
+  icon: {fileID: -76596165655313214, guid: e152eb82609009b44a52327e4a791b1a, type: 3}

@@ -140,6 +140,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ddb908fa7c729419f05867d9550daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &19713823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19713815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accbea5c46eb6764da26ac1c0c37b3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolutionUI: {fileID: 774742560}
+  pokemonImage: {fileID: 1646417884}
 --- !u!1001 &114868926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603884709012129751, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: UI Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 603884709012129751, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_IsActive
@@ -703,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: pokeballSlots.Array.size
@@ -712,7 +726,11 @@ PrefabInstance:
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: slots.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: 933d85d168446bd4cb3a2523ab56519e, type: 2}
+      objectReference: {fileID: 11400000, guid: dc7ee3aa87048b24e8be610085b486e9, type: 2}
+    - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: slots.Array.data[2].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 456d59ba498c3844abbfa32eed352763, type: 2}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: slots.Array.data[6].item
       value: 
@@ -788,7 +806,7 @@ PrefabInstance:
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[2].item
       value: 
-      objectReference: {fileID: 11400000, guid: 27518861827e9814a8b0c52508223e65, type: 2}
+      objectReference: {fileID: 11400000, guid: 933d85d168446bd4cb3a2523ab56519e, type: 2}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[3].item
       value: 
@@ -1195,6 +1213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+--- !u!1 &774742560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2120438296563210360, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+  m_PrefabInstance: {fileID: 704071019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &834792010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7578645415627566310, guid: 3bfbc572057373344af3aefca13fb08b, type: 3}
@@ -1363,6 +1386,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6030ef53a5bd5c845bd94934c0fa83ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1646417884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1667802858865942296, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+  m_PrefabInstance: {fileID: 704071019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2137785914
