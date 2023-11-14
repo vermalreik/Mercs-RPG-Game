@@ -211,6 +211,11 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         return Base.Evolutions.FirstOrDefault(e => e.RequiredLevel == level);
     }
 
+    public Evolution CheckForEvolution(ItemBase item)
+    {
+        return Base.Evolutions.FirstOrDefault(e => e.RequiredItem == item);
+    }
+
     public void Evolve(Evolution evolution)
     {
         _base = evolution.EvolvesInto;
