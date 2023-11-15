@@ -126,7 +126,8 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
         int oldMaxHP = MaxHp;
         MaxHp = Mathf.FloorToInt(Base.MaxHp * Level / 100f) + 10 + Level;
     
-        HP += MaxHp - oldMaxHP;
+        if(oldMaxHP != 0)
+            HP += MaxHp - oldMaxHP;
     }
 
     void ResetStatBoost()
@@ -224,6 +225,12 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
     {
         _base = evolution.EvolvesInto;
         CalculateStats();
+    }
+
+    public void Heal()
+    {
+        HP = MaxHp;
+        OnHPChanged?.Invoke();
     }
 
     // Properties for each of the stats
