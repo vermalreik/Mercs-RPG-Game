@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e22ba0ef4382304fbf2d86cba9333b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 1087190100}
+  walletUI: {fileID: 1882850615}
 --- !u!114 &19713817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +671,10 @@ PrefabInstance:
     - target: {fileID: 836943686949657847, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 862387669787854499, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 959082356535455148, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1443,6 +1449,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6030ef53a5bd5c845bd94934c0fa83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1087190100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2508727155809779608, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+  m_PrefabInstance: {fileID: 704071019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228b888b14f17b04a89bf5e5a4a3e71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1149181461 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7578645415627566331, guid: 3bfbc572057373344af3aefca13fb08b, type: 3}
@@ -1580,6 +1597,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1882850615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6139853853647238188, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+  m_PrefabInstance: {fileID: 704071019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe68ea7d29691b4f8d7d12d6078ed85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2137785914

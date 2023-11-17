@@ -16,6 +16,8 @@ MonoBehaviour:
   description: "A medicine that revives a fainted Pok\xE9mon, restoring HP by half
     the maximum amount."
   icon: {fileID: -2110608351096105267, guid: 495e632438fba4b4aada35a146c960b6, type: 3}
+  price: 100
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0
