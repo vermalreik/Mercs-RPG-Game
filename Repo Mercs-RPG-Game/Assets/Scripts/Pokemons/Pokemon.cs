@@ -231,6 +231,8 @@ public class Pokemon // This is going to be plain C#, thats why we dont inherit 
     {
         HP = MaxHp;
         OnHPChanged?.Invoke();
+
+        CureStatus();
     }
 
     // Properties for each of the stats
