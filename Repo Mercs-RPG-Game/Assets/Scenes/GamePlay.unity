@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e22ba0ef4382304fbf2d86cba9333b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopCameraOffset: {x: 3.5, y: 0}
   inventoryUI: {fileID: 1087190100}
   shopUI: {fileID: 704071020}
   walletUI: {fileID: 1882850615}
