@@ -337,6 +337,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b145ee5d9d8744e8e11ac8a4ed94d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  availableItems:
+  - {fileID: 11400000, guid: ba2a50f215712d74aa94d37ed90a3fa8, type: 2}
+  - {fileID: 11400000, guid: dc7ee3aa87048b24e8be610085b486e9, type: 2}
+  - {fileID: 11400000, guid: aa7c1228a55af9644a305c87cd4693b9, type: 2}
+  - {fileID: 11400000, guid: 366ebe6daf9649f4a8100c7222b1368d, type: 2}
+  - {fileID: 11400000, guid: 5ba5de7200bc2494a936ae5a82bf108d, type: 2}
+  - {fileID: 11400000, guid: e70bcc6dd1f3a894fa16d4b81a017e29, type: 2}
+  - {fileID: 11400000, guid: 6cfe3431c17a92342912bd7ae4790c7e, type: 2}
+  - {fileID: 11400000, guid: 2410286d2bb82984aaa039845008210d, type: 2}
+  - {fileID: 11400000, guid: d360c555522f700499066308e5f8d893, type: 2}
+  - {fileID: 11400000, guid: d6098c9b8781fa84bbdeb3d47238cc1b, type: 2}
+  - {fileID: 11400000, guid: a370ea6b2f2b34f498b05d756e7a82a6, type: 2}
+  - {fileID: 11400000, guid: c1898e3afb15a3442bf3bc984f7de70a, type: 2}
 --- !u!1 &451299816
 GameObject:
   m_ObjectHideFlags: 0
