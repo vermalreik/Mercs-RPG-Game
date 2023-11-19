@@ -1632,6 +1632,22 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 8985621867348667839, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: sfxList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985621867348667839, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: sfxList.Array.data[1].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985621867348667839, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: sfxList.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 05d2902be66b8114b924f178db472828, type: 3}
+    - target: {fileID: 8985621867348667839, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: sfxList.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d4b621c438c50b44a9f2082915e67815, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
 --- !u!114 &704071020 stripped

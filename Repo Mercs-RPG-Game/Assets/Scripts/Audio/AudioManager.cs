@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] List<AudioData> sfxList;
+
     [SerializeField] AudioSource musicPlayer;
     [SerializeField] AudioSource sfxPlayer;
 
     [SerializeField] float fadeDuration = 0.75f;
 
     float originalMusicVol;
+    Dictionary<AudioId, AudioData> sfxLookup;
 
     public static AudioManager i { get; private set; }
     private void Awake()
@@ -22,6 +26,23 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         originalMusicVol = musicPlayer.volume;
+
+        sfxLookup = sfxList.ToDictionary(x => x.id);
+    }
+
+    public void PlaySfx(AudioClip clip)
+    {
+        if(clip == null) return;
+
+        sfxPlayer.PlayOneShot(clip);
+    }
+
+    public void PlaySfx(AudioId audioId)
+    {
+        if(!sfxLookup.ContainsKey(audioId)) return;
+
+        var audioData = sfxLookup[audioId];
+        PlaySfx(audioData.clip);
     }
 
     public void PlayMusic(AudioClip clip, bool loop=true, bool fade=false)
@@ -43,4 +64,13 @@ public class AudioManager : MonoBehaviour
         if(fade)
             yield return musicPlayer.DOFade(originalMusicVol, fadeDuration).WaitForCompletion();
     }
+}
+
+public enum AudioId { UISelect, Hit, Faint, ExpGain }
+
+[System.Serializable]
+public class AudioData
+{
+    public AudioId id;
+    public AudioClip clip;
 }
