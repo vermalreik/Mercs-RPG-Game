@@ -11,6 +11,7 @@ public class GameLayers : MonoBehaviour
     [SerializeField] LayerMask fovLayer;
     [SerializeField] LayerMask portalLayer;
     [SerializeField] LayerMask triggersLayer;
+    [SerializeField] LayerMask ledgeLayer;
 
     // Singleton pattern
     public static GameLayers i { get;set; } // i = instance
@@ -46,5 +47,7 @@ public class GameLayers : MonoBehaviour
     public LayerMask TriggerableLayers{
         get => grassLayer | fovLayer | portalLayer | triggersLayer;
     }
+
+    public LayerMask LedgeLayer => ledgeLayer;
 
 }

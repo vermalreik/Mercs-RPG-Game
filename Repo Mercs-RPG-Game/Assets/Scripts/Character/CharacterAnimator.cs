@@ -16,6 +16,7 @@ public class CharacterAnimator : MonoBehaviour
     public float MoveX{ get; set; }
     public float MoveY{ get; set; }
     public bool IsMoving{ get;set; }
+    public bool IsJumping{ get;set; }
 
     // States
     SpriteAnimator walkDownAnim;
@@ -57,7 +58,9 @@ public class CharacterAnimator : MonoBehaviour
         if(currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
             currentAnim.Start(); // We have also call it if the value of IsMoving changue xD or else sometimes the character slides, moves without playing animation
 
-        if(IsMoving)
+        if(IsJumping)
+            spriteRenderer.sprite = currentAnim.Frames[currentAnim.Frames.Count-1];
+        else if(IsMoving)
             currentAnim.HandleUpdate();
         else
             spriteRenderer.sprite = currentAnim.Frames[0];
