@@ -288,6 +288,7 @@ MonoBehaviour:
     - I will train harder and beat you one day!
   exclamation: {fileID: 459722507526392388}
   fov: {fileID: 459722508148338238}
+  trainerAppearsClip: {fileID: 8300000, guid: 2680ba2471d50fe44a1b933b6a341bf9, type: 3}
 --- !u!114 &459722507659769475
 MonoBehaviour:
   m_ObjectHideFlags: 0
