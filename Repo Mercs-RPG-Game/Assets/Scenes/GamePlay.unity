@@ -838,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2417286925459817430, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_Volume
-      value: 0.25
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 2417286925459817430, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_audioClip
@@ -886,7 +886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: pokeballSlots.Array.size
@@ -979,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[3].item
       value: 
-      objectReference: {fileID: 11400000, guid: 933d85d168446bd4cb3a2523ab56519e, type: 2}
+      objectReference: {fileID: 11400000, guid: 27518861827e9814a8b0c52508223e65, type: 2}
     - target: {fileID: 2591093608267525957, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: tmSlots.Array.data[0].count
       value: 1
