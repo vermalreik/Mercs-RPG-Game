@@ -601,6 +601,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 603884707518465516, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: pokemons.Array.data[2]._base
+      value: 
+      objectReference: {fileID: 11400000, guid: c8e5e3f30ba0ed248bdbb33cc4d4311e, type: 2}
+    - target: {fileID: 603884707518465516, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: pokemons.Array.data[4]._base
       value: 
       objectReference: {fileID: 11400000, guid: e982859a69e4f3846bee83ec7d30df50, type: 2}
@@ -668,6 +672,10 @@ PrefabInstance:
       propertyPath: choiceBox
       value: 
       objectReference: {fileID: 313927035}
+    - target: {fileID: 603884708365952086, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: waterLayer.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 603884709012129751, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: m_Name
       value: UI Canvas
