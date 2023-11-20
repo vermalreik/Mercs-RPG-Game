@@ -7,9 +7,12 @@ public class MapArea : MonoBehaviour
 {
     [SerializeField] List<PokemonEncounterRecord> wildPokemons;
 
-    private void Start()
+    [HideInInspector]
+    [SerializeField] int totalChance = 0;
+
+    private void OnValidate() // This function will be call whenever we make a change in the Inspector
     {
-        int totalChance = 0;
+        totalChance = 0;
         foreach (var record in wildPokemons)
         {
             record.chanceLower = totalChance;
@@ -17,6 +20,11 @@ public class MapArea : MonoBehaviour
 
             totalChance = totalChance + record.chancePercentage;
         }
+    }
+
+    private void Start()
+    {
+        
     }
 
     public Pokemon GetRandomWildPokemon()

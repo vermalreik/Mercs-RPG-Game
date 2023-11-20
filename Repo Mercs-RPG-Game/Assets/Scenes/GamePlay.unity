@@ -1700,8 +1700,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: e4197ccb4baac214abf3347dd52213af, type: 2}
-    level: 10
+  - pokemon: {fileID: 11400000, guid: e982859a69e4f3846bee83ec7d30df50, type: 2}
+    levelRange: {x: 2, y: 4}
+    chancePercentage: 70
+  - pokemon: {fileID: 11400000, guid: e062023d43c652e4f81f90d6a046aafa, type: 2}
+    levelRange: {x: 2, y: 5}
+    chancePercentage: 20
+  - pokemon: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
+    levelRange: {x: 2, y: 4}
+    chancePercentage: 10
+  totalChance: 100
 --- !u!114 &874324110 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3916418130019070378, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
@@ -1764,8 +1772,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
-    level: 10
+  - pokemon: {fileID: 0}
+    levelRange: {x: 0, y: 0}
+    chancePercentage: 0
+  totalChance: 0
 --- !u!224 &1209943851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 579143021417083813, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
