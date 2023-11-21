@@ -596,6 +596,102 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUp.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDown.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeft.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRight.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUp.Array.data[0]
+      value: 
+      objectReference: {fileID: 3813548939266466592, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUp.Array.data[1]
+      value: 
+      objectReference: {fileID: -8729997094781277245, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDown.Array.data[0]
+      value: 
+      objectReference: {fileID: 812022796101690744, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDown.Array.data[1]
+      value: 
+      objectReference: {fileID: -7046451217977380472, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeft.Array.data[0]
+      value: 
+      objectReference: {fileID: 4436393387595848636, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeft.Array.data[1]
+      value: 
+      objectReference: {fileID: -6727287997064239916, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRight.Array.data[0]
+      value: 
+      objectReference: {fileID: -4414775276333358189, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRight.Array.data[1]
+      value: 
+      objectReference: {fileID: -7089433734773283142, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUpSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDownSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeftSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRightSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUpSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 3813548939266466592, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfUpSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -8729997094781277245, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDownSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 812022796101690744, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfDownSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -7046451217977380472, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeftSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 4436393387595848636, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfLeftSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -6727287997064239916, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRightSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -4414775276333358189, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
+    - target: {fileID: 603884707518465507, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
+      propertyPath: surfRightSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -7089433734773283142, guid: cf7ab142196d0b14c9ff221a60bab378, type: 3}
     - target: {fileID: 603884707518465516, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
       propertyPath: pokemons.Array.data[0].level
       value: 12
@@ -1717,7 +1813,9 @@ MonoBehaviour:
   - pokemon: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
     levelRange: {x: 2, y: 4}
     chancePercentage: 10
+  wildPokemonsInWater: []
   totalChance: 100
+  totalChanceWater: 0
 --- !u!114 &874324110 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3916418130019070378, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
@@ -1780,10 +1878,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - pokemon: {fileID: 0}
-    levelRange: {x: 0, y: 0}
-    chancePercentage: 0
-  totalChance: 0
+  - pokemon: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
+    levelRange: {x: 4, y: 6}
+    chancePercentage: 100
+  wildPokemonsInWater:
+  - pokemon: {fileID: 11400000, guid: c8e5e3f30ba0ed248bdbb33cc4d4311e, type: 2}
+    levelRange: {x: 4, y: 6}
+    chancePercentage: 100
+  totalChance: 100
+  totalChanceWater: 0
 --- !u!224 &1209943851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 579143021417083813, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}

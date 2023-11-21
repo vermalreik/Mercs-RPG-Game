@@ -10,6 +10,8 @@ using System.Linq;
 public enum BattleState { Start, ActionSelection, MoveSelection, RunningTurn, Busy, Bag, PartyScreen, AboutToUse, MoveToForget, BattleOver } // Busy: when the player and the enemy are attacking
 public enum BattleAction { Move, SwitchPokemon, UseItem, Run }
 
+public enum BattleTrigger { LongGrass, Water}
+
 
 public class BattleSystem : MonoBehaviour
 {

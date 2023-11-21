@@ -6,9 +6,13 @@ using UnityEngine;
 public class MapArea : MonoBehaviour
 {
     [SerializeField] List<PokemonEncounterRecord> wildPokemons;
+    [SerializeField] List<PokemonEncounterRecord> wildPokemonsInWater;
 
     [HideInInspector]
     [SerializeField] int totalChance = 0;
+
+    [HideInInspector]
+    [SerializeField] int totalChanceWater = 0;
 
     private void OnValidate() // This function will be call whenever we make a change in the Inspector
     {
@@ -20,6 +24,15 @@ public class MapArea : MonoBehaviour
 
             totalChance = totalChance + record.chancePercentage;
         }
+
+        totalChanceWater = 0;
+        foreach (var record in wildPokemonsInWater)
+        {
+            record.chanceLower = totalChanceWater;
+            record.chanceUpper = totalChanceWater + record.chancePercentage;
+
+            totalChance = totalChanceWater + record.chancePercentage;
+        }
     }
 
     private void Start()
@@ -27,10 +40,12 @@ public class MapArea : MonoBehaviour
         
     }
 
-    public Pokemon GetRandomWildPokemon()
+    public Pokemon GetRandomWildPokemon(BattleTrigger trigger)
     {
+        var pokemonList = (trigger == BattleTrigger.LongGrass) ? wildPokemons : wildPokemonsInWater;
+
         int randVal = Random.Range(1, 101);
-        var pokemonRecord = wildPokemons.First(p => randVal >= p.chanceLower && randVal <= p.chanceUpper);
+        var pokemonRecord = pokemonList.First(p => randVal >= p.chanceLower && randVal <= p.chanceUpper);
 
         var levelRange = pokemonRecord.levelRange;
         int level = levelRange.y == 0 ? levelRange.x : Random.Range(levelRange.x, levelRange.y + 1); // + 1 because the second value is exclusive
