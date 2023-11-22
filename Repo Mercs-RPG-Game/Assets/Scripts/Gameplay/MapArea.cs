@@ -14,30 +14,45 @@ public class MapArea : MonoBehaviour
     [HideInInspector]
     [SerializeField] int totalChanceWater = 0;
 
+    // When we start the game from build this function will not be called, so we have to call this code "CalculateChancePercentage()" from Start function also
     private void OnValidate() // This function will be call whenever we make a change in the Inspector
     {
-        totalChance = 0;
-        foreach (var record in wildPokemons)
-        {
-            record.chanceLower = totalChance;
-            record.chanceUpper = totalChance + record.chancePercentage;
-
-            totalChance = totalChance + record.chancePercentage;
-        }
-
-        totalChanceWater = 0;
-        foreach (var record in wildPokemonsInWater)
-        {
-            record.chanceLower = totalChanceWater;
-            record.chanceUpper = totalChanceWater + record.chancePercentage;
-
-            totalChance = totalChanceWater + record.chancePercentage;
-        }
+        CalculateChancePercentage();
     }
 
     private void Start()
     {
-        
+        CalculateChancePercentage();
+    }
+
+    void CalculateChancePercentage()
+    {
+        totalChance = -1;
+        totalChanceWater = -1;
+
+        if(wildPokemons.Count > 0)
+        {
+            totalChance = 0;
+            foreach (var record in wildPokemons)
+            {
+                record.chanceLower = totalChance;
+                record.chanceUpper = totalChance + record.chancePercentage;
+
+                totalChance = totalChance + record.chancePercentage;
+            }
+        }
+
+        if(wildPokemonsInWater.Count > 0)
+        {
+            totalChanceWater = 0;
+            foreach (var record in wildPokemonsInWater)
+            {
+                record.chanceLower = totalChanceWater;
+                record.chanceUpper = totalChanceWater + record.chancePercentage;
+
+                totalChanceWater = totalChanceWater + record.chancePercentage;
+            }
+        }
     }
 
     public Pokemon GetRandomWildPokemon(BattleTrigger trigger)

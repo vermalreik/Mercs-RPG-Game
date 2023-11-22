@@ -30,6 +30,11 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] AudioClip trainerBattleMusic;
     [SerializeField] AudioClip battleVictoryMusic;
 
+    [Header("Background images")]
+    [SerializeField] Image backgroundImage;
+    [SerializeField] Sprite grassBackground;
+    [SerializeField] Sprite waterBackground;
+
     public event Action<bool> OnBattleOver;
 
     BattleState state;
@@ -48,19 +53,25 @@ public class BattleSystem : MonoBehaviour
     int escapeAttemps;
     MoveBase moveToLearn;
 
-    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon)
+    BattleTrigger battleTrigger;
+
+    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon,
+        BattleTrigger trigger = BattleTrigger.LongGrass)
     {
         this.playerParty = playerParty; // use this. pbecause the name of the parameter and the variable is the same
         this.wildPokemon = wildPokemon;
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
 
+        battleTrigger = trigger;
+
         AudioManager.i.PlayMusic(wildBattleMusic);
 
         StartCoroutine(SetupBattle());
     }
 
-    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty)
+    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty,
+        BattleTrigger trigger = BattleTrigger.LongGrass)
     {
         this.playerParty = playerParty; // use this. pbecause the name of the parameter and the variable is the same
         this.trainerParty = trainerParty;
@@ -68,6 +79,8 @@ public class BattleSystem : MonoBehaviour
         isTrainerBattle = true;
         player = playerParty.GetComponent<PlayerController>();
         trainer = trainerParty.GetComponent<TrainerController>();
+
+        battleTrigger = trigger;
 
         AudioManager.i.PlayMusic(trainerBattleMusic);
 
@@ -78,6 +91,8 @@ public class BattleSystem : MonoBehaviour
     {
         playerUnit.Clear();
         enemyUnit.Clear();
+
+        backgroundImage.sprite = (battleTrigger == BattleTrigger.LongGrass)? grassBackground : waterBackground;
 
         if(!isTrainerBattle)
         {

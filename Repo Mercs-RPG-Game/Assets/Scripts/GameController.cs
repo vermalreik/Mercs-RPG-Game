@@ -106,7 +106,7 @@ public class GameController : MonoBehaviour
 
         var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
         
-        battleSystem.StartBattle(playerParty, wildPokemon);
+        battleSystem.StartBattle(playerParty, wildPokemon, trigger);
     }
 
     TrainerController trainer;

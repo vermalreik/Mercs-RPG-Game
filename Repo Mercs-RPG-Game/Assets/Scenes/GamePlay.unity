@@ -1815,7 +1815,7 @@ MonoBehaviour:
     chancePercentage: 10
   wildPokemonsInWater: []
   totalChance: 100
-  totalChanceWater: 0
+  totalChanceWater: -1
 --- !u!114 &874324110 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3916418130019070378, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}
@@ -1880,13 +1880,16 @@ MonoBehaviour:
   wildPokemons:
   - pokemon: {fileID: 11400000, guid: 92caf394d22890a47b727d745e7c87b6, type: 2}
     levelRange: {x: 4, y: 6}
-    chancePercentage: 100
+    chancePercentage: 40
+  - pokemon: {fileID: 11400000, guid: e982859a69e4f3846bee83ec7d30df50, type: 2}
+    levelRange: {x: 4, y: 6}
+    chancePercentage: 60
   wildPokemonsInWater:
   - pokemon: {fileID: 11400000, guid: c8e5e3f30ba0ed248bdbb33cc4d4311e, type: 2}
     levelRange: {x: 4, y: 6}
     chancePercentage: 100
   totalChance: 100
-  totalChanceWater: 0
+  totalChanceWater: 100
 --- !u!224 &1209943851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 579143021417083813, guid: 319fc75dd00da0542b2ecca6e5a2b492, type: 3}

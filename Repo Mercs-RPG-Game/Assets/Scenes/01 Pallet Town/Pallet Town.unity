@@ -207,8 +207,11 @@ MonoBehaviour:
   - {fileID: -1567942379356725351, guid: ba48fa1e7ecaff74c9feb25765f0b2ca, type: 3}
   - {fileID: 8872105055155168715, guid: ba48fa1e7ecaff74c9feb25765f0b2ca, type: 3}
   - {fileID: 7790685082357327452, guid: ba48fa1e7ecaff74c9feb25765f0b2ca, type: 3}
-  surfSprites: []
   defaultDirection: 1
+  surfDownSprites: []
+  surfUpSprites: []
+  surfLeftSprites: []
+  surfRightSprites: []
 --- !u!114 &74064319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +602,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d09c5914b187d8b4598fbf93f41629bc, type: 3}
+--- !u!1 &560374092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560374094}
+  - component: {fileID: 560374093}
+  m_Layer: 0
+  m_Name: TestCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &560374093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560374092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6fb740165cf304ca1698b67744d1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions: []
+  references:
+    version: 1
+--- !u!4 &560374094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560374092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &793191113
 GameObject:
   m_ObjectHideFlags: 0
@@ -22436,8 +22485,11 @@ MonoBehaviour:
   - {fileID: -4923645922866010990, guid: 52a920b1d90ced04ea25b3f01efb861c, type: 3}
   - {fileID: -7110057863986395019, guid: 52a920b1d90ced04ea25b3f01efb861c, type: 3}
   - {fileID: 4215211146369535636, guid: 52a920b1d90ced04ea25b3f01efb861c, type: 3}
-  surfSprites: []
   defaultDirection: 2
+  surfDownSprites: []
+  surfUpSprites: []
+  surfLeftSprites: []
+  surfRightSprites: []
 --- !u!114 &1850365298
 MonoBehaviour:
   m_ObjectHideFlags: 0
