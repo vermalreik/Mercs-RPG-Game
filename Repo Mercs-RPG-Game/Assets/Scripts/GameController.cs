@@ -95,6 +95,16 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void StartCutsceneState()
+    {
+        state = GameState.Cutscene;
+    }
+
+    public void StartFreeRoamState()
+    {
+        state = GameState.FreeRoam;
+    }
+
     public void StartBattle(BattleTrigger trigger)
     {
         state = GameState.Battle;

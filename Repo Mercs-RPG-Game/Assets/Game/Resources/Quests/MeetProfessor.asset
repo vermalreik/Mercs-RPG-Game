@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e70fd8259131348bb720dab7e98a65, type: 3}
   m_Name: MeetProfessor
   m_EditorClassIdentifier: 
-  name: 
+  name: MeetProfessor
   description: 
   startDialogue:
     lines: []
