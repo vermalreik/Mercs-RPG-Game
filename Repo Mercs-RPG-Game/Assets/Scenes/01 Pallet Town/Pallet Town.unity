@@ -635,13 +635,18 @@ MonoBehaviour:
   actions:
   - id: 0
   - id: 1
+  - id: 2
+  - id: 3
   references:
     version: 1
     00000000:
       type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
       data:
         name: MoveActorAction
-        character: {fileID: 1221898967}
+        waitForCompletion: 1
+        actor:
+          isPlayer: 0
+          character: {fileID: 1221898967}
         movePatterns:
         - {x: -2, y: 0}
         - {x: 0, y: 1}
@@ -649,9 +654,32 @@ MonoBehaviour:
       type: {class: DialogueAction, ns: , asm: Assembly-CSharp}
       data:
         name: DialogueAction
+        waitForCompletion: 1
         dialog:
           lines:
           - :O Don't leave yet, Professor Oak was looking for you
+    00000002:
+      type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: MoveActorAction
+        waitForCompletion: 0
+        actor:
+          isPlayer: 0
+          character: {fileID: 1221898967}
+        movePatterns:
+        - {x: 0, y: -13}
+        - {x: 5, y: 0}
+    00000003:
+      type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: MoveActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 1
+          character: {fileID: 0}
+        movePatterns:
+        - {x: 0, y: -14}
+        - {x: 3, y: 0}
 --- !u!4 &560374094
 Transform:
   m_ObjectHideFlags: 0
