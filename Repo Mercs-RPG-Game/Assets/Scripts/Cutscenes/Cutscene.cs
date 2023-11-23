@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Cutscene : MonoBehaviour, IPlayerTriggerable
@@ -26,6 +27,10 @@ public class Cutscene : MonoBehaviour, IPlayerTriggerable
 
     public void AddAction(CutsceneAction action)
     {
+        // preprocessor directive so it will only compile this line if we're in the Editor, not when we're trying tobuild the game
+        #if UNITY_EDITOR
+        Undo.RegisterCompleteObjectUndo(this, "Add action to cutscene.");
+        #endif
         action.Name = action.GetType().ToString();
         actions.Add(action);
     }

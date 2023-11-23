@@ -637,6 +637,12 @@ MonoBehaviour:
   - id: 1
   - id: 2
   - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
+  - id: 7
+  - id: 8
+  - id: 9
   references:
     version: 1
     00000000:
@@ -651,6 +657,15 @@ MonoBehaviour:
         - {x: -2, y: 0}
         - {x: 0, y: 1}
     00000001:
+      type: {class: TurnActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: TurnActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 1
+          character: {fileID: 0}
+        direction: 1
+    00000002:
       type: {class: DialogueAction, ns: , asm: Assembly-CSharp}
       data:
         name: DialogueAction
@@ -658,7 +673,7 @@ MonoBehaviour:
         dialog:
           lines:
           - :O Don't leave yet, Professor Oak was looking for you
-    00000002:
+    00000003:
       type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
       data:
         name: MoveActorAction
@@ -669,7 +684,7 @@ MonoBehaviour:
         movePatterns:
         - {x: 0, y: -13}
         - {x: 5, y: 0}
-    00000003:
+    00000004:
       type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
       data:
         name: MoveActorAction
@@ -680,6 +695,50 @@ MonoBehaviour:
         movePatterns:
         - {x: 0, y: -14}
         - {x: 3, y: 0}
+    00000005:
+      type: {class: TurnActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: TurnActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 0
+          character: {fileID: 1221898967}
+        direction: 2
+    00000006:
+      type: {class: DialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: DialogueAction
+        waitForCompletion: 1
+        dialog:
+          lines:
+          - :D This is Pofessor Oak's  Lab
+    00000007:
+      type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: MoveActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 0
+          character: {fileID: 1221898967}
+        movePatterns:
+        - {x: 3, y: 0}
+        - {x: 0, y: 6}
+    00000008:
+      type: {class: TeleportObjectAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: TeleportObjectAction
+        waitForCompletion: 1
+        go: {fileID: 1221898968}
+        position: {x: 3.5, y: 7.8}
+    00000009:
+      type: {class: TurnActorAction, ns: , asm: Assembly-CSharp}
+      data:
+        name: TurnActorAction
+        waitForCompletion: 1
+        actor:
+          isPlayer: 0
+          character: {fileID: 1221898967}
+        direction: 1
 --- !u!4 &560374094
 Transform:
   m_ObjectHideFlags: 0
@@ -1026,12 +1085,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8980173600511096421, guid: 84c6f876510b37d4ea1cb9bf331fde67, type: 3}
   m_PrefabInstance: {fileID: 1221898966}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1221898968}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d59ee2bede724214fbdb8484948c3e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1221898968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8980173600511096428, guid: 84c6f876510b37d4ea1cb9bf331fde67, type: 3}
+  m_PrefabInstance: {fileID: 1221898966}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1283282232
 PrefabInstance:
   m_ObjectHideFlags: 0
