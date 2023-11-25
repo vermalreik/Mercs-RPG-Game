@@ -24,15 +24,11 @@ public class GameController : MonoBehaviour
     public SceneDetails CurrentScene { get; private set; }
     public SceneDetails PrevScene { get; private set; }
 
-    MenuController menuController;
-
     public static GameController Instance { get; private set; }
 
     private void  Awake()
     {
         Instance = this;
-
-        menuController = GetComponent<MenuController>();
 
         // Disable mouse
         //Cursor.lockState = CursorLockMode.Locked;
@@ -64,13 +60,6 @@ public class GameController : MonoBehaviour
             if(state == GameState.Dialog)
                 state = prevState;
         };
-
-        menuController.onBack += () =>
-        {
-            state = GameState.FreeRoam;
-        };
-
-        menuController.onMenuSelected += OnMenuSelected;
 
         EvolutionManager.i.OnStartEvolution += () =>
         {
@@ -174,16 +163,7 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         StateMachine.Exceute();
-        /* if(state == GameState.FreeRoam)
-        {
-            playerController.HandleUpdate();
 
-            if(Input.GetKeyDown(KeyCode.Return))
-            {
-                menuController.OpenMenu();
-                state = GameState.Menu;
-            }
-        } */
         if(state == GameState.Cutscene)
         {
             playerController.Character.HandleUpdate();
@@ -195,10 +175,6 @@ public class GameController : MonoBehaviour
         else if(state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
-        }
-        else if(state == GameState.Menu)
-        {
-            menuController.HandleUpdate();
         }
         else if(state == GameState.PartyScreen)
         {
