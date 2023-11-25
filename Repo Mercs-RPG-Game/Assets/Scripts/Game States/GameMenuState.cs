@@ -19,18 +19,30 @@ public class GameMenuState : State<GameController>
     {
         gc = owner;
         menuController.gameObject.SetActive(true);
+        menuController.OnSelected += OnMenuItemSelected;
+        menuController.OnBack += OnBack;
     }
 
     public override void Execute()
     {
         menuController.HandleUpdate();
-        
-        if(Input.GetKeyDown(KeyCode.X))
-            gc.StateMachine.Pop();
     }
 
     public override void Exit()
     {
         menuController.gameObject.SetActive(false);
+        // It's really IMPORTANT to unsuscribe for the events, otherwise we would keep suscribing to them
+        menuController.OnSelected -= OnMenuItemSelected;
+        menuController.OnBack -= OnBack;
+    }
+
+    void OnMenuItemSelected(int selection)
+    {
+        Debug.Log($"Selected meny item {selection}");
+    }
+
+    void OnBack()
+    {
+        gc.StateMachine.Pop();
     }
 }
