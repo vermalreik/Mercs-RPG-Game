@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
+using System.Linq;
 using UnityEngine;
 
 namespace GDEUtils.StateMachine
@@ -47,6 +48,11 @@ namespace GDEUtils.StateMachine
             StateStack.Push(newState);
             CurrentState = newState;
             CurrentState.Enter(owner);
+        }
+
+        public State<T> GetPrevState()
+        {
+            return StateStack.ElementAt(1); // the Top item will be in the 0 index
         }
     }
 }

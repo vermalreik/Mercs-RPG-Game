@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using GDE.GenericSelectionUI;
 using UnityEngine;
 using UnityEngine.UI;
 
 public enum InventoryUIState { ItemSelection, PartySelection, MoveToForget, Busy }
 
-public class InventoryUI : MonoBehaviour
+public class InventoryUI : SelectionUI<TextSlot>
 {
     [SerializeField] GameObject itemList;
     [SerializeField] ItemSlotUI itemSlotUI;
@@ -23,8 +24,6 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] MoveSelectionUI moveSelectionUI;
 
     Action<ItemBase> onItemUsed;
-
-    int selectedItem = 0;
     int selectedCategory = 0;
 
     MoveBase moveToLearn;
@@ -66,78 +65,36 @@ public class InventoryUI : MonoBehaviour
             slotUIList.Add(slotUIObj);
         }
 
-        UpdateItemSelection();
+        SetItems(slotUIList.Select(s => s.GetComponent<TextSlot>()).ToList());
+
+        UpdateSelectionInUI();
     }
 
-    public void HandleUpdate(Action onBack, Action<ItemBase> onItemUsed=null)
+    public override void HandleUpdate()
     {
-        this.onItemUsed = onItemUsed;
+        int prevCategory = selectedCategory;
 
-        if(state == InventoryUIState.ItemSelection)
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+            ++selectedCategory;
+        else if(Input.GetKeyDown(KeyCode.LeftArrow))
+            --selectedCategory;
+
+        // clamping (you can not go beyond right or left when you reach the end) or rotating selection. Do it with Category before clamping hte items
+        // selectedCategory = Mathf.Clamp(selectedCategory, 0, Inventory.ItemCategories.Count - 1); //Clamping // we have 3 category of items on our inventory
+        // Rotating Selection
+        if(selectedCategory > Inventory.ItemCategories.Count - 1)
+            selectedCategory = 0;
+        else if(selectedCategory < 0)
+            selectedCategory = Inventory.ItemCategories.Count - 1;
+        
+        if(prevCategory != selectedCategory)
         {
-            int prevSelection = selectedItem;
-            int prevCategory = selectedCategory;
-
-            if(Input.GetKeyDown(KeyCode.DownArrow))
-                ++selectedItem;
-            else if(Input.GetKeyDown(KeyCode.UpArrow))
-                --selectedItem;
-            else if(Input.GetKeyDown(KeyCode.RightArrow))
-                ++selectedCategory;
-            else if(Input.GetKeyDown(KeyCode.LeftArrow))
-                --selectedCategory;
-
-            // clamping (you can not go beyond right or left when you reach the end) or rotating selection. Do it with Category before clamping hte items
-            // selectedCategory = Mathf.Clamp(selectedCategory, 0, Inventory.ItemCategories.Count - 1); //Clamping // we have 3 category of items on our inventory
-            // Rotating Selection
-            if(selectedCategory > Inventory.ItemCategories.Count - 1)
-                selectedCategory = 0;
-            else if(selectedCategory < 0)
-                selectedCategory = Inventory.ItemCategories.Count - 1;
-            
-            //Clamping Selection
-            selectedItem = Mathf.Clamp(selectedItem, 0 , inventory.GetSlotsByCategory(selectedCategory).Count - 1);
-
-            if(prevCategory != selectedCategory)
-            {
-                ResetSelection();
-                categoryText.text = Inventory.ItemCategories[selectedCategory];
-                UpdateItemList();
-            }
-            else if(prevSelection != selectedItem)
-            {
-                 UpdateItemSelection();
-            }
-
-            if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Z))
-            {
-                StartCoroutine(ItemSelected());
-            }
-            else if(Input.GetKeyDown(KeyCode.X))
-            {
-                onBack?.Invoke();
-            }
+            ResetSelection();
+            categoryText.text = Inventory.ItemCategories[selectedCategory];
+            UpdateItemList();
         }
-        else if( state == InventoryUIState.PartySelection)
-        {
-            Action onSelected = () =>
-            {
-                StartCoroutine(UseItem());
-            };
-            Action onBackPartyScreen = () =>
-            {
-                ClosePartyScreen();
-            };
-            //partyScreen.HandleUpdate(onSelected, onBackPartyScreen);
-        }
-        else if(state == InventoryUIState.MoveToForget)
-        {
-            Action<int> onMoveSelected = (int moveIndex) =>
-            {
-                StartCoroutine(OnMoveToForgetSelected(moveIndex));
-            };
-            moveSelectionUI.HandleMoveSelection(onMoveSelected);
-        }
+
+        base.HandleUpdate();
     }
 
     IEnumerator ItemSelected()
@@ -273,20 +230,11 @@ public class InventoryUI : MonoBehaviour
         state = InventoryUIState.MoveToForget;
     }
 
-    void UpdateItemSelection()
+    public override void UpdateSelectionInUI()
     {
+        base.UpdateSelectionInUI();
+
         var slots = inventory.GetSlotsByCategory(selectedCategory);
-
-        // Clamp selectedItem so in case an item was remove we won't get the index out of range Exception
-        selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count -1);
-
-        for (int i = 0; i < slotUIList.Count; i++)
-        {
-            if(i == selectedItem)
-                slotUIList[i].NameText.color = GlobalSettings.i.HighlightedColor;
-            else
-                slotUIList[i].NameText.color = Color.black;
-        }
 
         if(slots.Count > 0)
         {
