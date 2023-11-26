@@ -169,7 +169,7 @@ public class BattleSystem : MonoBehaviour
 
     void OpenPartyScreen()
     {
-        partyScreen.CalledFrom = state;
+        //partyScreen.CalledFrom = state;
         state = BattleState.PartyScreen;
         partyScreen.gameObject.SetActive(true);
     }
@@ -656,7 +656,7 @@ public class BattleSystem : MonoBehaviour
 
             partyScreen.gameObject.SetActive(false);
 
-            if(partyScreen.CalledFrom == BattleState.ActionSelection)
+            /* if(partyScreen.CalledFrom == BattleState.ActionSelection)
             {
                 StartCoroutine(RunTurns(BattleAction.SwitchPokemon));
             }
@@ -665,12 +665,12 @@ public class BattleSystem : MonoBehaviour
                 state = BattleState.Busy;
                 bool isTrainerAboutToUse = partyScreen.CalledFrom == BattleState.AboutToUse;
                 StartCoroutine(SwitchPokemon(selectedMember, isTrainerAboutToUse));
-            }
+            }  */
 
-            partyScreen.CalledFrom = null;
+            //partyScreen.CalledFrom = null;
         };
 
-        Action onBack = () =>
+        /* Action onBack = () =>
         {
             if(playerUnit.Pokemon.HP <= 0)
             {
@@ -690,7 +690,7 @@ public class BattleSystem : MonoBehaviour
             partyScreen.CalledFrom = null;
         };
 
-        partyScreen.HandleUpdate(onSelected, onBack);
+        partyScreen.HandleUpdate(onSelected, onBack); */
 
     }
 

@@ -8,7 +8,9 @@ public class TextSlot : MonoBehaviour, ISelectableItem
     [SerializeField] Text text;
 
     Color originalColor;
-    private void Awake() {
+    
+    public void Init()
+    {
         originalColor = text.color;
     }
 
