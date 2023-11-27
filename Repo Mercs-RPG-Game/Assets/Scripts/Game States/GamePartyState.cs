@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using GDEUtils.StateMachine;
 using UnityEngine;
 
@@ -39,14 +40,19 @@ public class GamePartyState : State<GameController>
     {
         if(gc.StateMachine.GetPrevState() == InventoryState.i)
         {
-            // Use Item
-            Debug.Log($"Use Item");
+            StartCoroutine(GoToUseItemState());
         }
         else
         {
             // Todo: Open summary screen
             Debug.Log($"Selected pokemon at index { selection}");
         }
+    }
+
+    IEnumerator GoToUseItemState()
+    {
+        yield return gc.StateMachine.PushAndWait(UseItemState.i);
+        gc.StateMachine.Pop();
     }
 
     void OnBack()

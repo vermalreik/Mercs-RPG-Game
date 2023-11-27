@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -48,6 +49,13 @@ namespace GDEUtils.StateMachine
             StateStack.Push(newState);
             CurrentState = newState;
             CurrentState.Enter(owner);
+        }
+
+        public IEnumerator PushAndWait(State<T> newState)
+        {
+            var oldState = CurrentState;
+            Push(newState);
+            yield return new WaitUntil(() => CurrentState == oldState);
         }
 
         public State<T> GetPrevState()
