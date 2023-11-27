@@ -3284,6 +3284,7 @@ GameObject:
   - component: {fileID: 603884708608309751}
   - component: {fileID: 5483096077149637428}
   - component: {fileID: 3335009764959003076}
+  - component: {fileID: 4226737448649663480}
   m_Layer: 0
   m_Name: BattleSystem
   m_TagString: Untagged
@@ -3361,6 +3362,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionUI: {fileID: 5086817445082859656}
   moveDetailsUI: {fileID: 603884708115734484}
+--- !u!114 &4226737448649663480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603884708608309749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5f5f50c159e4b41acee925c36fe43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &603884708721206538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,11 +4725,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204c278536ad93f4ab5a8195154a23f7, type: 3}
---- !u!4 &603884707518465506 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5462784001438231729, guid: 204c278536ad93f4ab5a8195154a23f7, type: 3}
-  m_PrefabInstance: {fileID: 4877073946400549203}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &603884707518465504 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5462784001438231731, guid: 204c278536ad93f4ab5a8195154a23f7, type: 3}
@@ -4731,6 +4739,11 @@ MonoBehaviour:
 --- !u!20 &603884708408974203 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 5462784001876275752, guid: 204c278536ad93f4ab5a8195154a23f7, type: 3}
+  m_PrefabInstance: {fileID: 4877073946400549203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &603884707518465506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5462784001438231729, guid: 204c278536ad93f4ab5a8195154a23f7, type: 3}
   m_PrefabInstance: {fileID: 4877073946400549203}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7236672431960670114
