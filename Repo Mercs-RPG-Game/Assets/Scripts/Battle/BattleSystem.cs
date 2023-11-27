@@ -6,6 +6,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using GDEUtils.StateMachine;
 
 public enum BattleStates { Start, ActionSelection, MoveSelection, RunningTurn, Busy, Bag, PartyScreen, AboutToUse, MoveToForget, BattleOver } // Busy: when the player and the enemy are attacking
 public enum BattleAction { Move, SwitchPokemon, UseItem, Run }
@@ -22,7 +23,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] Image playerImage;
     [SerializeField] Image trainerImage;
     [SerializeField] GameObject pokeballSprite;
-    [SerializeField] MoveSelectionUI moveSelectionUI;
+    [SerializeField] MoveToForgetSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
 
     [Header("Audio")]
@@ -34,6 +35,8 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] Image backgroundImage;
     [SerializeField] Sprite grassBackground;
     [SerializeField] Sprite waterBackground;
+
+    public StateMachine<BattleSystem> StateMachine { get; private set; }
 
     public event Action<bool> OnBattleOver;
 
@@ -89,6 +92,8 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle()
     {
+        StateMachine = new StateMachine<BattleSystem>(this);
+
         playerUnit.Clear();
         enemyUnit.Clear();
 
@@ -141,7 +146,8 @@ public class BattleSystem : MonoBehaviour
         // StartCoroutine(xD);
         // pero al estar dentro de una rutina las llamo asi:
         // yield return , esto esperara a k esta rutina se complete y solo despues de eso the execution will come down
-        ActionSelection();
+        
+        StateMachine.ChangeState(ActionSelectionState.i);
     }
 
     void BattleOver(bool won) // its a function that triggers the battle over state
@@ -502,15 +508,9 @@ public class BattleSystem : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if(state == BattleStates.ActionSelection)
-        {
-            HandleActionSelection();
-        }
-        else if(state == BattleStates.MoveSelection)
-        {
-            HandleMoveSelection();
-        }
-        else if(state == BattleStates.PartyScreen)
+        StateMachine.Exceute();
+
+        if(state == BattleStates.PartyScreen)
         {
             HandlePartySelection();
         }
@@ -900,4 +900,9 @@ public class BattleSystem : MonoBehaviour
             }
         }
     }
+
+    public BattleDialogBox DialogBox => dialogBox;
+
+    public BattleUnit PlayerUnit => playerUnit;
+    public BattleUnit EnemyUnit => enemyUnit;
 }
