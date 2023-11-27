@@ -39,7 +39,7 @@ public class GameMenuState : State<GameController>
     void OnMenuItemSelected(int selection)
     {
         if(selection == 0) // Pokemon
-            gc.StateMachine.Push(GamePartyState.i);
+            gc.StateMachine.Push(PartyState.i);
         else if(selection == 1) // Bag
             gc.StateMachine.Push(InventoryState.i);
     }

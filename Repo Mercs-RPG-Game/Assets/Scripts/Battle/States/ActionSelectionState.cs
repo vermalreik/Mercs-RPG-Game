@@ -51,11 +51,25 @@ BattleSystem bs;
         else if(selection == 2)
         {
             // Pokemon
+            //GameController.Instance.StateMachine.PushAndWait(PartyState.i);
+            StartCoroutine(GoToParatyState());
         }
         else if(selection == 3)
         {
             // Run
             bs.SelectedAction = BattleAction.Run;
+            bs.StateMachine.ChangeState(RunTurnState.i);
+        }
+    }
+
+    IEnumerator GoToParatyState()
+    {
+        yield return GameController.Instance.StateMachine.PushAndWait(PartyState.i);
+        var selectedPokemon = PartyState.i.SelectedPokemon;
+        if(selectedPokemon != null)
+        {
+            bs.SelectedAction = BattleAction.SwitchPokemon;
+            bs.SelectedPokemon = selectedPokemon;
             bs.StateMachine.ChangeState(RunTurnState.i);
         }
     }

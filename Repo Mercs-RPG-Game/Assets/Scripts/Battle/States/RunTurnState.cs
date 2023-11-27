@@ -76,8 +76,7 @@ public class RunTurnState : State<BattleSystem>
         {
             if(playerAction == BattleAction.SwitchPokemon)
             {
-                var selectedPokemon = partyScreen.SelectedMember;
-                //yield return SwitchPokemon(selectedPokemon);
+                yield return bs.SwitchPokemon(bs.SelectedPokemon);
             }
             else if(playerAction == BattleAction.UseItem)
             {
@@ -288,16 +287,19 @@ public class RunTurnState : State<BattleSystem>
             yield return new WaitForSeconds(1f);
         }
 
-        CheckForBattleOver(faintedUnit);
+        yield return CheckForBattleOver(faintedUnit);
     }
 
-    void CheckForBattleOver(BattleUnit faintedUnit)
+    IEnumerator CheckForBattleOver(BattleUnit faintedUnit)
     {
         if(faintedUnit.IsPlayerUnit)
         {
             var nextPokemon = playerParty.GetHealthyPokemon();
             if(nextPokemon != null)
-                return;//OpenPartyScreen();
+            {
+                yield return GameController.Instance.StateMachine.PushAndWait(PartyState.i);
+                yield return bs.SwitchPokemon(PartyState.i.SelectedPokemon);
+            }
             else    
                 bs.BattleOver(false); // player lost battle
         }
@@ -311,7 +313,7 @@ public class RunTurnState : State<BattleSystem>
             {
                 var nextPokemon = trainerParty.GetHealthyPokemon();
                 if(nextPokemon != null)
-                    return; //StartCoroutine(AboutToUse(nextPokemon));
+                    yield break;//StartCoroutine(AboutToUse(nextPokemon));
                 else
                     bs.BattleOver(true);
             }
